@@ -1,0 +1,47 @@
+@import "../sizes.scss";
+
+$width_portrait: 70%;
+$width_landscape: 50%;
+
+$border: 1vmax;
+
+/* ----------- Asus Nexus 7 ----------- */
+
+/* Portrait and Landscape */
+@media screen
+  and (device-width: 601px)
+  and (device-height: 906px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332) {
+    // nothing
+}
+
+/* Portrait */
+@media screen
+  and (device-width: 601px)
+  and (device-height: 906px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332)
+  and (orientation: portrait) {
+    body #img-middle, body #more-info {
+      @include resizable_elem($width_portrait, 0px);
+    }
+    body #img-bottom {
+      @include resizable_elem($width_portrait, $border);
+    }
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 601px)
+  and (device-height: 906px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332)
+  and (orientation: landscape) {
+    body #img-middle, body #more-info {
+        @include resizable_elem($width_landscape, 0px);
+    }
+    body #img-bottom {
+        @include resizable_elem($width_landscape, $border);
+    }
+}

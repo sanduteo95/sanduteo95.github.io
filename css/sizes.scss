@@ -1,0 +1,5 @@
+@mixin resizable_elem($width, $padding) {
+  width: calc(#{$width} + #{2*$padding});
+  margin-top: calc(-#{$width/2});
+  margin-left: calc(-#{$width/2});
+}
