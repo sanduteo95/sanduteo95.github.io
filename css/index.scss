@@ -14,6 +14,7 @@
 $font: 'Helvetica Neue', sans-serif;
 
 $title_font: 4vmax;
+$medium_font: 1.5vmax;
 $normal_font: 1vmax;
 
 $border_color_start: #e4cdd7;
@@ -39,7 +40,7 @@ a {
   margin-top: 3%;
   font-size: $title_font;
   font-weight: bold;
-  letter-spacing: -1px;
+  letter-spacing: -0.1vmin;
   line-height: 1;
   text-align: center;
   animation: blur-in 2s 1;
@@ -52,6 +53,11 @@ a {
   @include resizable_elem($width, 0px);
   border: $border_width solid $border_color_start;
   border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.2;
+  }
 }
 
 .img-pop-up {
@@ -103,11 +109,11 @@ a {
 
 .info-text {
   text-align: center;
+  vertical-align: middle;
   color: black;
   text-decoration: none;
-}
-.info-text:before {
-  content: ' \25CF';
+  font-size: $medium_font;
+  font-weight: bold;
 }
 
 // keyframes
@@ -144,5 +150,5 @@ a {
 
 .drip {
   color: $border_color_start;
-  text-shadow: 4px 4px 1px #300000;
+  text-shadow: 0.5vmin 0.5vmin 0.2vmin black;
 }

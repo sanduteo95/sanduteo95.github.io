@@ -392,7 +392,7 @@ a {
   margin-top: 3%;
   font-size: 4vmax;
   font-weight: bold;
-  letter-spacing: -1px;
+  letter-spacing: -0.1vmin;
   line-height: 1;
   text-align: center;
   animation: blur-in 2s 1; }
@@ -406,6 +406,9 @@ a {
   margin-left: calc(-15%);
   border: 1vmax solid #e4cdd7;
   border-radius: 50%; }
+  #img-middle:hover {
+    cursor: pointer;
+    opacity: 0.2; }
 
 .img-pop-up {
   animation: pop-up 2s 1; }
@@ -452,11 +455,11 @@ a {
 
 .info-text {
   text-align: center;
+  vertical-align: middle;
   color: black;
-  text-decoration: none; }
-
-.info-text:before {
-  content: ' \25CF'; }
+  text-decoration: none;
+  font-size: 1.5vmax;
+  font-weight: bold; }
 
 @keyframes pop-up {
   0% {
@@ -479,6 +482,6 @@ a {
     opacity: 1; } }
 .drip {
   color: #e4cdd7;
-  text-shadow: 4px 4px 1px #300000; }
+  text-shadow: 0.5vmin 0.5vmin 0.2vmin black; }
 
 /*# sourceMappingURL=index.css.map */
