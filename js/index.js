@@ -25,11 +25,11 @@ $(function () {
 
 	$(window).resize(function () {
 		var width = $('#img-middle').width();
-		var parentHeight = $('#img-middle').offsetParent().height();
 		var height = width;
-		var heightPercentage = 100 * height / parentHeight;
-
+		var heightPercentage = 100 * height / $('#img-middle').offsetParent().height();
+		
 		$('#img-middle').css('height', heightPercentage + '%');
+
 
 		$('#img-bottom').css('height', ($('#img-middle').height() + 30) + 'px');
 
@@ -50,8 +50,8 @@ $(function () {
 			rot = rot - angle;
 		});
 
-		parentHeight = $('#more-info').offsetParent().height();
-		heightPercentage = 100 * height / parentHeight;
+		var parentHeight = $('#more-info').offsetParent().height();
+		heightPercentage = 100 * height / $('#more-info').offsetParent().height();
 
 		$('#more-info').css('height', heightPercentage + '%');
 
