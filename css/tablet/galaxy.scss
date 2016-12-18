@@ -18,8 +18,8 @@ $border: 1vmax;
 @media
   (max-device-width: 800px)
   and (orientation: portrait) {
-    body #nav {
-      @include resizable_elem($width_portrait, 0px);
+    body #nav { 		
+      	@include resizable_elem($width_portrait, 0px);
     }
 }
 
@@ -27,7 +27,7 @@ $border: 1vmax;
 @media
   (max-device-width: 1280px)
   and (orientation: landscape) {
-    body #nav {
-      @include resizable_elem($width_landscape, 0px);
+    body #nav { 		
+      	@include resizable_elem($width_landscape, 0px);
     }
 }

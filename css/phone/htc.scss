@@ -21,8 +21,8 @@ $border: 1vmax;
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 3)
   and (orientation: portrait) {
-    body #nav {
-      @include resizable_elem($width_portrait, 0px);
+    body #nav { 		
+      	@include resizable_elem($width_portrait, 0px);
     }
 }
 
@@ -32,7 +32,7 @@ $border: 1vmax;
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 3)
   and (orientation: landscape) {
-    body #nav {
-      @include resizable_elem($width_landscape, 0px);
+    body #nav { 		
+      	@include resizable_elem($width_landscape, 0px);
     }
 }
