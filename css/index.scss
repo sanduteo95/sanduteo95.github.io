@@ -53,11 +53,6 @@ a {
   @include resizable_elem($width, 0px);
   border: $border_width solid $border_color_start;
   border-radius: 50%;
-
-  &:hover {
-    cursor: pointer;
-    opacity: 0.2;
-  }
 }
 
 .img-pop-up {

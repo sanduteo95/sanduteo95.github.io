@@ -369,8 +369,68 @@
     width: calc(30% + 2vmax);
     margin-top: calc(-15%);
     margin-left: calc(-15%); } }
+@media screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
+  body #img-middle, body #more-info {
+    width: calc(70% + 0px);
+    margin-top: calc(-35%);
+    margin-left: calc(-35%); }
+
+  body #img-bottom {
+    width: calc(70% + 2vmax);
+    margin-top: calc(-35%);
+    margin-left: calc(-35%); } }
+@media screen and (max-height: 400px) and (-webkit-min-device-pixel-ratio: 1) {
+  body #img-middle, body #more-info {
+    width: calc(50% + 0px);
+    margin-top: calc(-25%);
+    margin-left: calc(-25%); }
+
+  body #img-bottom {
+    width: calc(50% + 2vmax);
+    margin-top: calc(-25%);
+    margin-left: calc(-25%); } }
+@media screen and (max-height: 200px) and (-webkit-min-device-pixel-ratio: 1) {
+  body #img-middle, body #more-info {
+    width: calc(30% + 0px);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); }
+
+  body #img-bottom {
+    width: calc(30% + 2vmax);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); } }
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  body #img-middle, body #more-info {
+    width: calc(30% + 0px);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); }
+
+  body #img-bottom {
+    width: calc(30% + 2vmax);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); } }
+@media screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  body #img-middle, body #more-info {
+    width: calc(70% + 0px);
+    margin-top: calc(-35%);
+    margin-left: calc(-35%); }
+
+  body #img-bottom {
+    width: calc(70% + 2vmax);
+    margin-top: calc(-35%);
+    margin-left: calc(-35%); } }
+@media screen and (max-height: 400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  body #img-middle, body #more-info {
+    width: calc(50% + 0px);
+    margin-top: calc(-25%);
+    margin-left: calc(-25%); }
+
+  body #img-bottom {
+    width: calc(50% + 2vmax);
+    margin-top: calc(-25%);
+    margin-left: calc(-25%); } }
+@media screen and (max-height: 200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   body #img-middle, body #more-info {
     width: calc(30% + 0px);
     margin-top: calc(-15%);
@@ -406,9 +466,6 @@ a {
   margin-left: calc(-15%);
   border: 1vmax solid #e4cdd7;
   border-radius: 50%; }
-  #img-middle:hover {
-    cursor: pointer;
-    opacity: 0.2; }
 
 .img-pop-up {
   animation: pop-up 2s 1; }
