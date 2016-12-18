@@ -379,7 +379,7 @@
     width: calc(70% + 2vmax);
     margin-top: calc(-35%);
     margin-left: calc(-35%); } }
-@media screen and (max-height: 400px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (max-height: 500px) and (-webkit-min-device-pixel-ratio: 1) {
   body #img-middle, body #more-info {
     width: calc(50% + 0px);
     margin-top: calc(-25%);
@@ -420,7 +420,7 @@
     width: calc(70% + 2vmax);
     margin-top: calc(-35%);
     margin-left: calc(-35%); } }
-@media screen and (max-height: 400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (max-height: 800px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   body #img-middle, body #more-info {
     width: calc(50% + 0px);
     margin-top: calc(-25%);
@@ -430,6 +430,36 @@
     width: calc(50% + 2vmax);
     margin-top: calc(-25%);
     margin-left: calc(-25%); } }
+@media screen and (max-width: 400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  body #img-middle, body #more-info {
+    width: calc(70% + 0px);
+    margin-top: calc(-35%);
+    margin-left: calc(-35%); }
+
+  body #img-bottom {
+    width: calc(70% + 2vmax);
+    margin-top: calc(-35%);
+    margin-left: calc(-35%); } }
+@media screen and (max-height: 400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  body #img-middle, body #more-info {
+    width: calc(30% + 0px);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); }
+
+  body #img-bottom {
+    width: calc(30% + 2vmax);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); } }
+@media screen and (max-width: 200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  body #img-middle, body #more-info {
+    width: calc(30% + 0px);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); }
+
+  body #img-bottom {
+    width: calc(30% + 2vmax);
+    margin-top: calc(-15%);
+    margin-left: calc(-15%); } }
 @media screen and (max-height: 200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   body #img-middle, body #more-info {
     width: calc(30% + 0px);
@@ -449,7 +479,6 @@ a {
   color: #b06d8a; }
 
 #title {
-  margin-top: 3%;
   font-size: 4vmax;
   font-weight: bold;
   letter-spacing: -0.1vmin;

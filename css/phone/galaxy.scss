@@ -21,6 +21,7 @@ $border: 1vmax;
   and (device-height: 640px)
   and (-webkit-device-pixel-ratio: 2)
   and (orientation: portrait) {
+	  
     body #img-middle, body #more-info {
       @include resizable_elem($width_portrait, 0px);
     }

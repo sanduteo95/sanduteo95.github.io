@@ -30,7 +30,6 @@ $(function () {
 		
 		$('#img-middle').css('height', heightPercentage + '%');
 
-
 		$('#img-bottom').css('height', ($('#img-middle').height() + 30) + 'px');
 
 		width = width + 8 * $(window).width() / 100;
@@ -66,7 +65,7 @@ $(function () {
         $(this).hide();
     });
 	
-	$('img#img-middle').on('mouseover', function () {
+	$('#img-bottom').on('mouseover', function () {
 		$('#img-middle').stop().animate({
 			opacity: 0.2
 		});
