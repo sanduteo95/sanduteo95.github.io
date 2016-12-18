@@ -270,15 +270,10 @@ body {
   margin: -1vmin;
   border-radius: 50%; }
 
-.img-blur-in {
+.blur-in {
   animation: blur-in 2s 1; }
 
 #more-info {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#info-text {
   display: inline-block;
   color: black;
   text-decoration: none;

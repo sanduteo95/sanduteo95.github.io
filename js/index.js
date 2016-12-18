@@ -13,7 +13,11 @@ function loadPage(page) {
 }
 
 $(function () {
-	"use strict";	
+	"use strict";
+	$('li').map(function () {
+        $(this).hide();
+    });
+	
 	setTimeout(function () {
 		$('#img-middle').removeClass('img-pop-up');
 		$('li').map(function () {
@@ -26,8 +30,10 @@ $(function () {
 		var height = width;
 		var heightPercentage = 100 * height / $('#nav').offsetParent().height();
 		
+		var widthPercentage = 100 * width / $('#nav').offsetParent().width();
+		
 		$('#nav').css('height', heightPercentage + '%');
-
+		
 		width = width + 8 * $(window).width() / 100;
 		var angle = 180 / ($('#img-bottom img').length - 1);
 		var rot = 180;
@@ -48,12 +54,8 @@ $(function () {
     $(window).resize();
 
     $('li').map(function () {
-        $(this).hide();
-    });
-
-    $('li').map(function () {
         $(this).on('click mouseover', function () {
-            $(this).removeClass('img-blur-in');
+            $(this).removeClass('blur-in');
         });
     });
 
