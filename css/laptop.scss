@@ -11,11 +11,8 @@ $border: 1vmax;
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }
 
@@ -23,44 +20,32 @@ $border: 1vmax;
 @media screen
   and (max-width: 800px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
 @media screen
   and (max-height: 800px)
    and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_landscape, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_landscape, $border);
     }
 }
 
 @media screen
   and (max-width: 400px)
    and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
 @media screen
   and (max-height: 400px)
    and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }
 
@@ -68,22 +53,16 @@ $border: 1vmax;
 @media screen
   and (max-width: 200px)
    and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }
 
 @media screen
   and (max-height: 200px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }
 
@@ -94,11 +73,8 @@ $border: 1vmax;
   and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }
 
@@ -106,11 +82,8 @@ $border: 1vmax;
   and (max-width: 800px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
@@ -118,11 +91,8 @@ $border: 1vmax;
   and (max-height: 800px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_landscape, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_landscape, $border);
     }
 }
 
@@ -130,11 +100,8 @@ $border: 1vmax;
   and (max-width: 400px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
@@ -142,11 +109,8 @@ $border: 1vmax;
   and (max-height: 400px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }
 
@@ -155,11 +119,8 @@ $border: 1vmax;
   and (max-width: 200px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }
 
@@ -167,10 +128,7 @@ $border: 1vmax;
   and (max-height: 200px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width, $border);
     }
 }

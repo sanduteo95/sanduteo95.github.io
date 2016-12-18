@@ -21,11 +21,8 @@ $border: 1vmax;
   and (max-device-width: 1024px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
@@ -35,11 +32,8 @@ $border: 1vmax;
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_landscape, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_landscape, $border);
     }
 }
 
@@ -58,11 +52,8 @@ $border: 1vmax;
   and (max-device-width: 1024px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
@@ -72,11 +63,8 @@ $border: 1vmax;
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_landscape, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_landscape, $border);
     }
 }
 
@@ -95,11 +83,8 @@ $border: 1vmax;
   and (max-device-width: 1024px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
@@ -109,10 +94,7 @@ $border: 1vmax;
   and (max-device-width: 1024px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_landscape, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_landscape, $border);
     }
 }

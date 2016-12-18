@@ -23,11 +23,8 @@ $border: 1vmax;
   and (-webkit-min-device-pixel-ratio: 1.331)
   and (-webkit-max-device-pixel-ratio: 1.332)
   and (orientation: portrait) {
-    body #img-middle, body #more-info {
+    body #nav {
       @include resizable_elem($width_portrait, 0px);
-    }
-    body #img-bottom {
-      @include resizable_elem($width_portrait, $border);
     }
 }
 
@@ -38,10 +35,7 @@ $border: 1vmax;
   and (-webkit-min-device-pixel-ratio: 1.331)
   and (-webkit-max-device-pixel-ratio: 1.332)
   and (orientation: landscape) {
-    body #img-middle, body #more-info {
+    body #nav {
         @include resizable_elem($width_landscape, 0px);
-    }
-    body #img-bottom {
-        @include resizable_elem($width_landscape, $border);
     }
 }
