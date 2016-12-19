@@ -101,23 +101,26 @@ body {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: $border_width;
-	left: $border_width; 
+	top: -$border_width;
+	left: -$border_width; 
 	padding: 0;
-	margin: 0;
+	margin: 2*$border_width;
 	border-radius: 50%;
 	list-style: none;
 }
 
-#img-bottom img {
+#img-bottom i {
 	display: block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: $icon_font;
-	height: $icon_font;
+	font-size: $icon_font;
 	margin: -$icon_font/2;
 	border-radius: 50%;
+}
+
+.fa { 
+	color: black !important;
 }
 
 .blur-in {

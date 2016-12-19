@@ -27,10 +27,10 @@ $(function () {
 
 	$(window).resize(function () {
 		var width = $('#img-middle').width() + 8 * $('#img-middle').offsetParent().width() / 100;
-		var angle = 180 / ($('#img-bottom img').length - 1);
+		var angle = 180 / ($('#img-bottom i').length - 1);
 		var rot = 180;
 
-		$('#img-bottom img').map(function () {
+		$('#img-bottom i').map(function () {
 			var icon = $(this).get(0);
 			$(icon).css({
 				'color': 'red',

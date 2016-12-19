@@ -198,6 +198,15 @@
 @media screen and (max-height: 350px) and (-webkit-min-device-pixel-ratio: 1) {
   body #nav {
     width: calc(10%); } }
+/* -----------Internet Explorer < 9 ---------- */
+/* IE 6, 7, 8*/
+@media \0screen\,screen\9 {
+  #img-middle {
+    width: 30%;
+    height: auto; }
+
+  #title {
+    color: black; } }
 html {
   display: table;
   width: 100%;
@@ -245,7 +254,7 @@ body {
   content: "";
   display: block;
   padding-top: 100%;
-  /* initial ratio of 1:1*/ }
+  /* ratio of 1:1*/ }
 
 #content {
   position: absolute;
@@ -267,22 +276,24 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: 1vmin;
-  left: 1vmin;
+  top: -1vmin;
+  left: -1vmin;
   padding: 0;
-  margin: 0;
+  margin: 2vmin;
   border-radius: 50%;
   list-style: none; }
 
-#img-bottom img {
+#img-bottom i {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2vmin;
-  height: 2vmin;
+  font-size: 2vmin;
   margin: -1vmin;
   border-radius: 50%; }
+
+.fa {
+  color: black !important; }
 
 .blur-in {
   animation: blur-in 2s 1; }
