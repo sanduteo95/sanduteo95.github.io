@@ -7,9 +7,9 @@
 @import "tablet/kindle.scss";
 @import "laptop.scss";
 @import "sizes.scss";
+
 $font: 'Helvetica Neue',
 sans-serif;
-
 $icon_font: 2vmin;
 $normal_font: 1.5vmin;
 $title_font: 5.5vmin;
@@ -22,6 +22,7 @@ $border_width: 1vmin;
 $width: 30%;
 
 html {
+	display: table;
 	width: 100%;
 	height: 100%;
 	font: $normal_font $font;
@@ -29,11 +30,9 @@ html {
 }
 
 body {
-	text-align: center;
-	display: table;
-	position: absolute;
-	height: 100%;
+	display: table-row;
 	width: 100%;
+	height: 100%;
 }
 
 * {
@@ -44,14 +43,8 @@ body {
 #wrapper {
 	display: table-cell;
 	vertical-align: middle;
+	text-align: center;
 	overflow-x: auto;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
 }
 
 .row {
@@ -76,10 +69,26 @@ body {
 
 #nav {
 	margin: 0 auto;
-	@include resizable_elem($width, 0px);
+	@include resizable_elem($width);
+}
+
+#nav:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* ratio of 1:1*/
+}
+
+#content {
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 
 #img-middle {
+	width: 100%;
+	height: 100%;
 	border: $border_width solid $border_color_start;
 	border-radius: 50%;
 }
@@ -92,8 +101,8 @@ body {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 7.5px;
-	left: 7.5px;
+	top: $border_width;
+	left: $border_width; 
 	padding: 0;
 	margin: 0;
 	border-radius: 50%;

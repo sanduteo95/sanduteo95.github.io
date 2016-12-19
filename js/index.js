@@ -26,15 +26,7 @@ $(function () {
 	}, 1000);
 
 	$(window).resize(function () {
-		var width = $('#nav').width();
-		var height = width;
-		var heightPercentage = 100 * height / $('#nav').offsetParent().height();
-		
-		var widthPercentage = 100 * width / $('#nav').offsetParent().width();
-		
-		$('#nav').css('height', heightPercentage + '%');
-		
-		width = width + 8 * $(window).width() / 100;
+		var width = $('#img-middle').width() + 8 * $('#img-middle').offsetParent().width() / 100;
 		var angle = 180 / ($('#img-bottom img').length - 1);
 		var rot = 180;
 
@@ -51,6 +43,7 @@ $(function () {
 			rot = rot - angle;
 		});
 	});
+	
     $(window).resize();
 
     $('li').map(function () {

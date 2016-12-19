@@ -22,7 +22,7 @@ $border: 1vmax;
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
     body #nav { 		
-      	@include resizable_elem($width_portrait, 0px);
+      	@include resizable_elem($width_portrait);
     }
 }
 
@@ -33,7 +33,7 @@ $border: 1vmax;
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
     body #nav { 		
-      	@include resizable_elem($width_landscape, 0px);
+      	@include resizable_elem($width_landscape);
     }
 }
 
@@ -53,7 +53,7 @@ $border: 1vmax;
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
     body #nav { 		
-      	@include resizable_elem($width_portrait, 0px);
+      	@include resizable_elem($width_portrait);
     }
 }
 
@@ -64,7 +64,7 @@ $border: 1vmax;
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
     body #nav { 		
-      	@include resizable_elem($width_landscape, 0px);
+      	@include resizable_elem($width_landscape);
     }
 }
 
@@ -84,7 +84,7 @@ $border: 1vmax;
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
     body #nav { 		
-      	@include resizable_elem($width_portrait, 0px);
+      	@include resizable_elem($width_portrait);
     }
 }
 
@@ -95,6 +95,6 @@ $border: 1vmax;
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
     body #nav { 		
-      	@include resizable_elem($width_landscape, 0px);
+      	@include resizable_elem($width_landscape);
     }
 }
