@@ -17,6 +17,7 @@ $(function () {
 	$('li').map(function () {
         $(this).hide();
     });
+	$('#timeline').hide();
 	
 	setTimeout(function () {
 		$('#img-middle').removeClass('img-pop-up');
@@ -26,7 +27,7 @@ $(function () {
 	}, 1000);
 
 	$(window).resize(function () {
-		var width = $('#img-middle').width() + 8 * $('#img-middle').offsetParent().width() / 100;
+		var width = $('#img-bottom').width();
 		var angle = 180 / ($('#img-bottom i').length - 1);
 		var rot = 180;
 
@@ -35,10 +36,10 @@ $(function () {
 			$(icon).css({
 				'color': 'red',
 				'-webkit-transform': 'rotate(' + rot + 'deg) translate(' + width / 2 + 'px) rotate(-' + rot + 'deg)',
-				'-moz-transform': 'rotate(' + rot + 'deg) translate(' + width / 2 + 'px) rotate(-' + rot + 'deg)',
-				'-ms-transform': 'rotate(' + rot + 'deg) translate(' + width / 2 + 'px) rotate(-' + rot + 'deg)',
-				'-o-transform': 'rotate(' + rot + 'deg) translate(' + width / 2 + 'px) rotate(-' + rot + 'deg)',
-				'transform': 'rotate(' + rot + 'deg) translate(' + width / 2 + 'px) rotate(-' + rot + 'deg)'
+				'-moz-transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)',
+				'-ms-transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)',
+				'-o-transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)',
+				'transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)'
 			});
 			rot = rot - angle;
 		});
@@ -67,4 +68,8 @@ $(function () {
     $('#img-twitter').click(function () {
         loadPage("https://twitter.com/sanduteo95");
     });
+	
+	$('#scroll').click(function () {
+		$('#timeline').show();
+	});
 });

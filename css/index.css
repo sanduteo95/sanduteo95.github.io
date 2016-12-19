@@ -1,212 +1,3 @@
-/* ----------- iPhone 4 and 4S ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- iPhone 6 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- iPhone 6+ ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- Galaxy S3 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- Galaxy S4 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- Galaxy S5 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- HTC One ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  body #nav {
-    width: calc(60%); } }
-/* Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- iPad mini ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(70%); } }
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(50%); } }
-/* ----------- iPad 1 and 2 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(70%); } }
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(50%); } }
-/* ----------- iPad 3 and 4 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  body #nav {
-    width: calc(70%); } }
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  body #nav {
-    width: calc(50%); } }
-/* ----------- Galaxy Tab 10.1 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media (max-device-width: 800px) and (orientation: portrait) {
-  body #nav {
-    width: calc(70%); } }
-/* Landscape */
-@media (max-device-width: 1280px) and (orientation: landscape) {
-  body #nav {
-    width: calc(50%); } }
-/* ----------- Asus Nexus 7 ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media screen and (device-width: 601px) and (device-height: 906px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: portrait) {
-  body #nav {
-    width: calc(70%); } }
-/* Landscape */
-@media screen and (device-width: 601px) and (device-height: 906px) and (-webkit-min-device-pixel-ratio: 1.331) and (-webkit-max-device-pixel-ratio: 1.332) and (orientation: landscape) {
-  body #nav {
-    width: calc(50%); } }
-/* ----------- Kindle Fire HD 7" ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
-  body #nav {
-    width: calc(70%); } }
-/* Landscape */
-@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- Kindle Fire HD 8.9" ----------- */
-/* Portrait and Landscape */
-/* Portrait */
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: portrait) {
-  body #nav {
-    width: calc(70%); } }
-/* Landscape */
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
-  body #nav {
-    width: calc(30%); } }
-/* ----------- Non-Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(70%); } }
-@media screen and (max-height: 700px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-width: 400px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(70%); } }
-@media screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-width: 200px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-height: 500px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(20%); } }
-@media screen and (max-height: 350px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(10%); } }
-/* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  body #nav {
-    width: calc(70%); } }
-@media screen and (max-height: 700px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-width: 400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  body #nav {
-    width: calc(70%); } }
-@media screen and (max-height: 600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-width: 200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  body #nav {
-    width: calc(30%); } }
-@media screen and (max-height: 500px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  body #nav {
-    width: calc(20%); } }
-@media screen and (max-height: 350px) and (-webkit-min-device-pixel-ratio: 1) {
-  body #nav {
-    width: calc(10%); } }
-/* -----------Internet Explorer < 9 ---------- */
-/* IE 6, 7, 8*/
-@media \0screen\,screen\9 {
-  #img-middle {
-    width: 30%;
-    height: auto; }
-
-  #title {
-    color: black; } }
 html {
   display: table;
   width: 100%;
@@ -219,6 +10,9 @@ body {
   width: 100%;
   height: 100%; }
 
+a {
+  text-decoration: none; }
+
 * {
   max-width: 100%;
   max-height: 100%; }
@@ -230,9 +24,9 @@ body {
   overflow-x: auto; }
 
 .row {
-  margin-top: 5%;
+  margin-top: 5vmin;
   position: relative;
-  margin-bottom: 5%; }
+  margin-bottom: 5vmin; }
 
 #header {
   display: inline-block;
@@ -248,7 +42,8 @@ body {
 
 #nav {
   margin: 0 auto;
-  width: calc(30%); }
+  width: 50vmin;
+  height: 50vmin; }
 
 #nav:before {
   content: "";
@@ -264,8 +59,8 @@ body {
   right: 0; }
 
 #img-middle {
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 2vmin);
+  height: calc(100% - 2vmin);
   border: 1vmin solid #e4cdd7;
   border-radius: 50%; }
 
@@ -276,10 +71,10 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  top: -1vmin;
-  left: -1vmin;
+  top: 0;
+  left: 0;
   padding: 0;
-  margin: 2vmin;
+  margin: 0;
   border-radius: 50%;
   list-style: none; }
 
@@ -290,7 +85,8 @@ body {
   left: 50%;
   font-size: 2vmin;
   margin: -1vmin;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
 
 .fa {
   color: black !important; }
@@ -302,7 +98,18 @@ body {
   display: inline-block;
   color: black;
   text-decoration: none;
-  font-size: 1.5vmin; }
+  font-size: 1.5vmin;
+  margin-bottom: 0; }
+
+#arrow {
+  margin-top: 0;
+  display: block;
+  font-size: 5.5vmin;
+  color: #e4cdd7;
+  cursor: pointer; }
+
+#arrow:hover {
+  color: #b06d8a; }
 
 @keyframes pop-up {
   0% {
