@@ -30,16 +30,24 @@ $(function () {
 		var width = $('#img-bottom').width();
 		var angle = 180 / ($('#img-bottom i').length - 1);
 		var rot = 180;
+		
+		var border_width = 20;
+		if($(window).width() <= 425) {
+			border_width = 10;
+		} else {
+			if($(window).height() <= 425) {
+				border_width = 4;
+			}
+		}
 
 		$('#img-bottom i').map(function () {
 			var icon = $(this).get(0);
 			$(icon).css({
-				'color': 'red',
-				'-webkit-transform': 'rotate(' + rot + 'deg) translate(' + width / 2 + 'px) rotate(-' + rot + 'deg)',
-				'-moz-transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)',
-				'-ms-transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)',
-				'-o-transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)',
-				'transform': 'rotate(' + rot + 'deg) translate(' + (width + 20) / 2 + 'px) rotate(-' + rot + 'deg)'
+				'-webkit-transform': 'rotate(' + rot + 'deg) translate(' + (width + border_width) / 2 + 'px) rotate(-' + rot + 'deg)',
+				'-moz-transform': 'rotate(' + rot + 'deg) translate(' + (width + border_width) / 2 + 'px) rotate(-' + rot + 'deg)',
+				'-ms-transform': 'rotate(' + rot + 'deg) translate(' + (width + border_width) / 2 + 'px) rotate(-' + rot + 'deg)',
+				'-o-transform': 'rotate(' + rot + 'deg) translate(' + (width + border_width) / 2 + 'px) rotate(-' + rot + 'deg)',
+				'transform': 'rotate(' + rot + 'deg) translate(' + (width + border_width) / 2 + 'px) rotate(-' + rot + 'deg)'
 			});
 			rot = rot - angle;
 		});

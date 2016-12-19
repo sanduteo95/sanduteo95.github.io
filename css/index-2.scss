@@ -1,16 +1,15 @@
 $font: 'Helvetica Neue',
 sans-serif;
-$icon_font: 2vmin;
-$normal_font: 1.5vmin;
-$title_font: 5.5vmin;
+$icon_font: 20px;
+$normal_font: 14px;
+$title_font: 50px;
 	
 $border_color_start: #e4cdd7;
 $border_color_middle: #b06d8a;
 $border_color_end: #b06d8a;
-$border_width: 1vmin;
+$border_width: 10px;
 
-$width: 50vmin;
-$height: 50vmin;
+$width: 400px;
 
 html {
 	display: table;
@@ -43,29 +42,29 @@ a {
 }
 
 .row {
-	margin-top: 5vmin;
+	margin-top: 2*$border_width;
 	position: relative;
-	margin-bottom: 5vmin;
+	margin-bottom: 2*$border_width;
 }
 
 #header {
 	display: inline-block;
 	font-size: $title_font;
 	font-weight: bold;
-	letter-spacing: -0.1vmin;
+	letter-spacing: -0.1px;
 	line-height: 1;
 	animation: blur-in 2s 1;
 }
 
 .drip {
 	color: $border_color_start;
-	text-shadow: 0.5vmin 0.5vmin 0.2vmin black;
+	text-shadow: 1px 1px 0.5px black;
 }
 
 #nav {
 	margin: 0 auto;
 	width: $width;
-	height: $height;
+	height: auto;
 }
 
 #nav:before{
@@ -122,12 +121,12 @@ a {
 	left: 50%;
 	font-size: $icon_font;
 	margin: -$icon_font/2;
-	border-radius: 50%;
 	/* Android browser */
 	border-top-left-radius: 50%;
 	border-top-right-radius: 50%;
 	border-bottom-left-radius: 50%;
 	border-bottom-right-radius: 50%;
+	border-radius: 50%;
 	cursor: pointer;
 }
 
@@ -188,4 +187,48 @@ a {
 		display: block;
 		opacity: 1;
 	}
+}
+
+// media queries
+@media screen and (max-width: 425px) {
+	#header {
+		font-size: 25px;
+	}
+	#img-middle {
+		width: calc(100% - 10px);
+		height: calc(100% - 10px);
+		border: 5px solid $border_color_start;
+	}
+	#img-bottom i {
+		font-size: 10px;
+		margin: -5px;
+	}
+	#more-info {
+		font-size: 8px;
+	}
+    body #nav { 
+      	width: 250px;
+    }
+}
+
+// media queries
+@media screen and (max-height: 425px) {
+	#header {
+		font-size: 20px;
+	}
+	#img-middle {
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+		border: 2px solid $border_color_start;
+	}
+	#img-bottom i {
+		font-size: 8px;
+		margin: -4px;
+	}
+	#more-info {
+		font-size: 6px;
+	}
+    body #nav { 
+      	width: 150px;
+    }
 }
