@@ -1,0 +1,19 @@
+@mixin resizable_elem($width) {
+  width: calc(#{$width});
+}
+
+@mixin border_radius() {
+	border-top-left-radius: 50% 50%;
+	border-top-right-radius: 50% 50%;
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+	border-radius: 50%;
+}
+
+@mixin animation($animation) {
+	-webkit-animation: $animation;
+    -moz-animation: $animation;
+    -o-animation: $animation;
+    -ms-transition: $animation;
+	animation: $animation;
+}

@@ -1,5 +1,6 @@
-$font: 'Helvetica Neue',
-sans-serif;
+@import 'functions';
+
+$font: 'Helvetica Neue', sans-serif;
 $icon_font: 2vmin;
 $normal_font: 1.5vmin;
 $title_font: 5.5vmin;
@@ -54,7 +55,7 @@ a {
 	font-weight: bold;
 	letter-spacing: -0.1vmin;
 	line-height: 1;
-	animation: blur-in 2s 1;
+	@include animation(blur-in 2s 1);
 }
 
 .drip {
@@ -86,16 +87,11 @@ a {
 	width: calc(100% - #{2 * $border_width});
 	height: calc(100% - #{2 * $border_width});
 	border: $border_width solid $border_color_start;
-	/* Android browser */
-	border-top-left-radius: 50%;
-	border-top-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	border-radius: 50%;
+	@include border_radius();
 }
 
 .img-pop-up {
-	animation: pop-up 2s 1;
+	@include animation(pop-up 2s 1);
 }
 
 #img-bottom {
@@ -106,12 +102,7 @@ a {
 	left: 0; 
 	padding: 0;
 	margin: 0;
-	/* Android browser */
-	border-top-left-radius: 50%;
-	border-top-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	border-radius: 50%;
+	@include border_radius();
 	list-style: none;
 }
 
@@ -122,12 +113,7 @@ a {
 	left: 50%;
 	font-size: $icon_font;
 	margin: -$icon_font/2;
-	border-radius: 50%;
-	/* Android browser */
-	border-top-left-radius: 50%;
-	border-top-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
+	@include border_radius();
 	cursor: pointer;
 }
 
@@ -136,7 +122,7 @@ a {
 }
 
 .blur-in {
-	animation: blur-in 2s 1;
+	@include animation(blur-in 2s 1);
 }
 
 #more-info {
