@@ -76,7 +76,7 @@ body {
 	margin-top: $date_size/2;
 //	margin-left: 2*$date_size;
 	margin-left: 0;
-	width: 45%;
+	width: 40%;
 	background: white;
 	border-radius: .25em;
 	padding: 0.5em;
@@ -119,10 +119,24 @@ body {
 			top: 24px;
 			right: 100%;
 			left: auto;
-			height: 100%;
+			width: 0px;
+			height: 0px;
 			border-color: transparent;
 			border-right-color: white;
 		}
+	}
+}
+
+.content-timeline:nth-child(even) {
+	&::before {
+		content: '';
+		position: absolute;
+		top: $date_size/2;
+		left: 100%;
+		height: 0;
+		width: 0;
+		border: 7px solid transparent;
+		border-left: 7px solid white;
 	}
 }
 
