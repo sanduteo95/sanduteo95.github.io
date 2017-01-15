@@ -1,16 +1,10 @@
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-body {
-  margin: 0;
-  background-color: #E8E8E8;
-  height: 100%; }
-
 #timeline {
+  float: left;
+  clear: left;
   position: relative;
   padding: 2em 0;
-  margin: 2em 2em; }
+  margin: 2em 2em;
+  margin-bottom: 0; }
   #timeline::before {
     content: '';
     position: absolute;

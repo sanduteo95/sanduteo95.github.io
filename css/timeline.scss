@@ -1,20 +1,12 @@
 @import 'variables';
 
-html * {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-body {
-	margin: 0;
-	background-color: $lightgrey;
-	height: 100%;
-}
-
 #timeline {
+	float: left;
+	clear: left;
   	position: relative;
 	padding: 2em 0;
   	margin: 2em 2em;
+	margin-bottom: 0;
 	
 	&::before {
 		content: '';
@@ -103,13 +95,6 @@ body {
 		border: 7px solid transparent;
 		border-right: 7px solid white;
 	}
-	
-//	&::before {
-//		top: 24px;
-//		left: 100%;
-//		border-color: transparent;
-//		border-left-color: white;
-//	}
 	
 	.block-timeline:nth-child(even) & {
 		float: right;

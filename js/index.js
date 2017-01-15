@@ -17,7 +17,6 @@ $(function () {
 	$('li').map(function () {
         $(this).hide();
     });
-	$('#timeline').hide();
 	
 	setTimeout(function () {
 		$('#img-middle').removeClass('img-pop-up');
@@ -27,6 +26,10 @@ $(function () {
 	}, 1000);
 
 	$(window).resize(function () {
+		
+		$('#first-page').css('height', $(window).height() * 90/100 +'px');
+//		$('#second-page').css('height', $(window).height() * 110/100 +'px');
+		
 		var width = $('#img-bottom').width();
 		var angle = 180 / ($('#img-bottom i').length - 1);
 		var rot = 180;
@@ -54,7 +57,16 @@ $(function () {
 	});
 	
     $(window).resize();
-
+//
+//	$(window).scroll(function(){
+//		var scrollTop = $(window).scrollTop();
+//		var height;
+//		if(scrollTop > $('#first-page').height() + $('#second-page').height()){
+//			height = $('#second-page').height()
+//		}
+//		$('#second-page').stop().animate({'height': height+"px"}, 500);
+//	});
+	
     $('li').map(function () {
         $(this).on('click mouseover', function () {
             $(this).removeClass('blur-in');
