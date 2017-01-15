@@ -1,20 +1,30 @@
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0;
+  background-color: #E8E8E8;
+  height: 100%; }
+
 #timeline {
   position: relative;
   padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em; }
+  margin: 2em 2em; }
   #timeline::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 37.5px;
+    left: 50%;
     height: 100%;
     width: 4px;
     background: #e4cdd7; }
 
 .block-timeline {
   position: relative;
-  margin: 2em 0; }
+  margin: 2em 0;
+  width: 100%;
+  overflow: hidden; }
   .block-timeline:first-child {
     margin-top: 0; }
   .block-timeline:last-child {
@@ -23,12 +33,14 @@
 .date-timeline {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  margin-left: -37.5px;
+  margin-top: 37.5px;
   width: 75px;
   height: 75px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: 0 0 0 4px #b06d8a, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #e4cdd7, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   text-align: center; }
   .date-timeline::before {
     content: ' ';
@@ -39,8 +51,11 @@
     font-weight: bold; }
 
 .content-timeline {
+  visibility: inherit;
   position: relative;
-  margin-left: 95px;
+  margin-top: 37.5px;
+  margin-left: 0;
+  width: 45%;
   background: white;
   border-radius: .25em;
   padding: 0.5em;
@@ -50,7 +65,7 @@
   .content-timeline p {
     display: inline-block;
     font-size: 14px;
-    margin: 1em 0;
+    margin: 0.5em 0;
     line-height: 1.6; }
   .content-timeline::before {
     content: '';
@@ -60,12 +75,22 @@
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid #b06d8a; }
+    border-right: 7px solid white; }
+  .block-timeline:nth-child(even) .content-timeline {
+    float: right; }
+    .block-timeline:nth-child(even) .content-timeline::before {
+      content: '';
+      top: 24px;
+      right: 100%;
+      left: auto;
+      height: 100%;
+      border-color: transparent;
+      border-right-color: white; }
 
-.cssanimations .img-timeline.is-hidden {
+.is-hidden {
   visibility: hidden; }
 
-.cssanimations .img-timeline.bounce-in {
+.bounce-in {
   visibility: visible;
   animation: bounce-in 0.6s; }
 

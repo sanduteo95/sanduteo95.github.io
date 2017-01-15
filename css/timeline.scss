@@ -1,16 +1,26 @@
 @import 'variables';
 
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+	background-color: $lightgrey;
+	height: 100%;
+}
+
 #timeline {
   	position: relative;
-  	padding: 2em 0;
-  	margin-top: 2em;
-  	margin-bottom: 2em;
+	padding: 2em 0;
+  	margin: 2em 2em;
 	
 	&::before {
 		content: '';
 		position: absolute;
 		top: 0;
-		left: $date_size/2;
+		left: 50%;
 		height: 100%;
 		width: 4px;
 		background: $border_color_start;
@@ -20,6 +30,8 @@
 .block-timeline {
 	position: relative;
 	margin: 2em 0;
+	width: 100%;
+	overflow: hidden;
 
 	&:first-child {
 		margin-top: 0;
@@ -30,15 +42,18 @@
 	}
 }
 
+
 .date-timeline {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 50%;
+	margin-left: -$date_size/2;
+	margin-top: $date_size/2;
 	width: $date_size;
 	height: $date_size;
 	border-radius: 50%;
 	background-color: white;
-	box-shadow: 0 0 0 4px $border_color_end, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+	box-shadow: 0 0 0 4px $border_color_start, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
 	// horizontal alignment
 	text-align: center; 
 	
@@ -56,8 +71,12 @@
 }
 
 .content-timeline {
+	visibility: inherit;
 	position: relative;
-	margin-left: $date_size + 20;
+	margin-top: $date_size/2;
+//	margin-left: 2*$date_size;
+	margin-left: 0;
+	width: 45%;
 	background: white;
 	border-radius: .25em;
 	padding: 0.5em;
@@ -70,10 +89,10 @@
 	p {
 		display: inline-block;
 		font-size: $normal_font;
-		margin: 1em 0;
+		margin: 0.5em 0;
 		line-height: 1.6;
 	}
-
+	
 	&::before {
 		content: '';
 		position: absolute;
@@ -82,15 +101,36 @@
 		height: 0;
 		width: 0;
 		border: 7px solid transparent;
-		border-right: 7px solid $border_color_end;
+		border-right: 7px solid white;
+	}
+	
+//	&::before {
+//		top: 24px;
+//		left: 100%;
+//		border-color: transparent;
+//		border-left-color: white;
+//	}
+	
+	.block-timeline:nth-child(even) & {
+		float: right;
+
+		&::before {
+			content: '';
+			top: 24px;
+			right: 100%;
+			left: auto;
+			height: 100%;
+			border-color: transparent;
+			border-right-color: white;
+		}
 	}
 }
 
-.cssanimations .img-timeline.is-hidden {
-  visibility: hidden;
+.is-hidden {
+	visibility: hidden;
 }
 
-.cssanimations .img-timeline.bounce-in {
+.bounce-in {
   visibility: visible;
   animation: bounce-in 0.6s;
 }

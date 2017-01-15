@@ -1,10 +1,34 @@
 $(function () {
 	"use strict";
-	$(window).on('scroll', function(){
-		$('.block-timeline').each(function(){
-			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.date-timeline').hasClass('is-hidden') ) {
-				$(this).find('.date-timeline, .content-timeline').removeClass('is-hidden').addClass('bounce-in');
-			}
-		});
+	$('.block-timeline').each(function() {
+		if(!isScrolledIntoView(this)) {
+			$(this).addClass('is-hidden');
+		}
+	});
+	
+	$(window).resize(function () {
+		hideContent();
+	});
+	
+	$(window).on('scroll', function() {
+		hideContent();
 	});
 });
+
+function hideContent() {
+	$('.block-timeline').each(function() {
+		if(isScrolledIntoView(this) && $(this).hasClass('is-hidden')) {
+			$(this).removeClass('is-hidden').addClass('bounce-in');
+		}
+		console.log(this);
+	});
+}
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
