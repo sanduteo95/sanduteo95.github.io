@@ -16,6 +16,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: $lightgrey;
 }
 
 #first-page {
@@ -28,6 +29,7 @@ body {
 	/* older spec implementation */
 	scroll-snap-destination: 0% 100%;
 	scroll-snap-points-x: repeat(100%);
+	background-color: white;
 }
 
 #second-page {

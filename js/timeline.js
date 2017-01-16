@@ -8,7 +8,11 @@ $(function () {
 	
 	$(window).resize(function () {
 		hideContent();
+		
+		var width = $('#title-timeline').width()+parseInt($('#title-timeline').css('padding-left'))+parseInt($('#title-timeline').css('padding-right'));
+		$('#title-timeline').css('margin-left', -width/2+'px');
 	});
+	$(window).resize();
 	
 	$(window).on('scroll', function() {
 		hideContent();
