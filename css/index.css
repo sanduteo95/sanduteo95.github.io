@@ -66,28 +66,27 @@ a {
   -moz-animation: blur-in 2s 1;
   -o-animation: blur-in 2s 1;
   -ms-transition: blur-in 2s 1;
-  animation: blur-in 2s 1;
-  margin-top: 10%; }
+  animation: blur-in 2s 1; }
 
-/* line 73, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 72, /Users/teo/Documents/Repos/Website/css/index.scss */
 .drip {
   color: #e4cdd7;
   text-shadow: 1px 1px 0.5px black; }
 
-/* line 78, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 77, /Users/teo/Documents/Repos/Website/css/index.scss */
 #nav {
   margin: 0 auto;
   width: 400px;
   height: auto; }
 
-/* line 84, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 83, /Users/teo/Documents/Repos/Website/css/index.scss */
 #nav:before {
   content: "";
   display: block;
   padding-top: 100%;
   /* ratio of 1:1*/ }
 
-/* line 90, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 89, /Users/teo/Documents/Repos/Website/css/index.scss */
 #content {
   position: absolute;
   top: 0;
@@ -95,7 +94,7 @@ a {
   bottom: 0;
   right: 0; }
 
-/* line 98, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 97, /Users/teo/Documents/Repos/Website/css/index.scss */
 #img-middle {
   width: calc(100% - 20px);
   height: calc(100% - 20px);
@@ -106,7 +105,7 @@ a {
   border-bottom-right-radius: 50% 50%;
   border-radius: 50%; }
 
-/* line 105, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 104, /Users/teo/Documents/Repos/Website/css/index.scss */
 .img-pop-up {
   -webkit-animation: pop-up 2s 1;
   -moz-animation: pop-up 2s 1;
@@ -114,7 +113,7 @@ a {
   -ms-transition: pop-up 2s 1;
   animation: pop-up 2s 1; }
 
-/* line 109, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 108, /Users/teo/Documents/Repos/Website/css/index.scss */
 #img-bottom {
   width: 100%;
   height: 100%;
@@ -130,7 +129,7 @@ a {
   border-radius: 50%;
   list-style: none; }
 
-/* line 121, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 120, /Users/teo/Documents/Repos/Website/css/index.scss */
 #img-bottom i {
   display: block;
   position: absolute;
@@ -145,11 +144,11 @@ a {
   border-radius: 50%;
   cursor: pointer; }
 
-/* line 132, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 131, /Users/teo/Documents/Repos/Website/css/index.scss */
 .fa {
   color: black !important; }
 
-/* line 136, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 135, /Users/teo/Documents/Repos/Website/css/index.scss */
 .blur-in {
   -webkit-animation: blur-in 2s 1;
   -moz-animation: blur-in 2s 1;
@@ -157,7 +156,7 @@ a {
   -ms-transition: blur-in 2s 1;
   animation: blur-in 2s 1; }
 
-/* line 140, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 139, /Users/teo/Documents/Repos/Website/css/index.scss */
 #more-info {
   display: inline-block;
   color: black;
@@ -165,7 +164,7 @@ a {
   font-size: 14px;
   margin-bottom: 0; }
 
-/* line 148, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 147, /Users/teo/Documents/Repos/Website/css/index.scss */
 #down-arrow {
   display: block;
   position: absolute;
@@ -174,7 +173,7 @@ a {
   width: 37.5px;
   height: 37.5px; }
 
-/* line 157, /Users/teo/Documents/Repos/Website/css/index.scss */
+/* line 156, /Users/teo/Documents/Repos/Website/css/index.scss */
 #down-arrow:hover {
   color: blue;
   cursor: pointer; }
@@ -201,42 +200,42 @@ a {
     opacity: 1; } }
 
 @media screen and (max-width: 425px) {
-  /* line 195, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 194, /Users/teo/Documents/Repos/Website/css/index.scss */
   #header {
     font-size: 25px; }
-  /* line 198, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 197, /Users/teo/Documents/Repos/Website/css/index.scss */
   #img-middle {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     border: 5px solid #e4cdd7; }
-  /* line 203, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 202, /Users/teo/Documents/Repos/Website/css/index.scss */
   #img-bottom i {
     font-size: 10px;
     margin: -5px; }
-  /* line 207, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 206, /Users/teo/Documents/Repos/Website/css/index.scss */
   #more-info {
     font-size: 8px; }
-  /* line 210, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 209, /Users/teo/Documents/Repos/Website/css/index.scss */
   body #nav {
     width: 250px; } }
 
 @media screen and (max-height: 425px) {
-  /* line 217, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 216, /Users/teo/Documents/Repos/Website/css/index.scss */
   #header {
     font-size: 20px; }
-  /* line 220, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 219, /Users/teo/Documents/Repos/Website/css/index.scss */
   #img-middle {
     width: calc(100% - 4px);
     height: calc(100% - 4px);
     border: 2px solid #e4cdd7; }
-  /* line 225, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 224, /Users/teo/Documents/Repos/Website/css/index.scss */
   #img-bottom i {
     font-size: 8px;
     margin: -4px; }
-  /* line 229, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 228, /Users/teo/Documents/Repos/Website/css/index.scss */
   #more-info {
     font-size: 6px; }
-  /* line 232, /Users/teo/Documents/Repos/Website/css/index.scss */
+  /* line 231, /Users/teo/Documents/Repos/Website/css/index.scss */
   body #nav {
     width: 150px; } }
 

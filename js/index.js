@@ -27,9 +27,8 @@ $(function () {
 
 	$(window).resize(function () {
 		
-		$('#first-page').css('height', $(window).height() * 90/100 +'px');
-//		$('#second-page').css('height', $(window).height() * 110/100 +'px');
-		
+		$('#first-page').css('height', $(window).height() +'px');
+        
 		var width = $('#img-bottom').width();
 		var angle = 180 / ($('#img-bottom i').length - 1);
 		var rot = 180;
@@ -57,15 +56,6 @@ $(function () {
 	});
 	
     $(window).resize();
-//
-//	$(window).scroll(function(){
-//		var scrollTop = $(window).scrollTop();
-//		var height;
-//		if(scrollTop > $('#first-page').height() + $('#second-page').height()){
-//			height = $('#second-page').height()
-//		}
-//		$('#second-page').stop().animate({'height': height+"px"}, 500);
-//	});
 	
     $('li').map(function () {
         $(this).on('click mouseover', function () {
@@ -88,8 +78,10 @@ $(function () {
     $('#img-twitter').click(function () {
         loadPage("https://twitter.com/sanduteo95");
     });
-	
-	$('#scroll').click(function () {
-		$('#timeline').show();
+    
+	$('#down-arrow').click(function () {
+        $('html, body').animate({
+            scrollTop: $("#second-page").offset().top
+        }, 2000);
 	});
 });
