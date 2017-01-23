@@ -27,7 +27,6 @@
 #title-timeline {
   display: inline-block;
   left: 50%;
-  margin-top: 10%;
   padding: 2em;
   position: relative;
   border-radius: 2em;
@@ -106,6 +105,40 @@
   border: 7px solid transparent;
   border-left: 7px solid white; }
 
+@media screen and (max-width: 768px) {
+  #title-timeline {
+    left: 24%; }
+    #title-timeline span {
+      font-weight: bold;
+      font-size: 32px; }
+
+  .content-timeline {
+    width: 60%; }
+    .block-timeline:nth-child(odd) .content-timeline {
+      float: right; }
+      .block-timeline:nth-child(odd) .content-timeline::before {
+        content: '';
+        top: 24px;
+        right: 100%;
+        left: auto;
+        width: 0px;
+        height: 0px;
+        border-color: transparent;
+        border-right-color: white; }
+
+  .date-timeline {
+    position: absolute;
+    top: 0;
+    left: 20%; }
+
+  #timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    height: 100%;
+    width: 4px;
+    background: #e4cdd7; } }
 .is-hidden {
   visibility: hidden; }
 

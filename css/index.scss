@@ -16,19 +16,14 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: $lightgrey;
+    background: $lightgrey;
 }
 
 #first-page {
 	width: 100%;
+    height: 100%;
 	white-space: nowrap;
-	overflow-x: hidden;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
-	scroll-snap-type: mandatory;
-	/* older spec implementation */
-	scroll-snap-destination: 0% 100%;
-	scroll-snap-points-x: repeat(100%);
+    overflow: none;
 	background-color: white;
 }
 
@@ -48,15 +43,16 @@ a {
 }
 
 #wrapper {
-	margin-top: 10%;
+	margin-top: 0;
 	float: left;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	overflow-x: auto;
+	overflow: none;
 	width: 100%;
 	height: 100%;
 }
+
 
 .row {
 	margin-top: 2*$border_width;
@@ -71,6 +67,7 @@ a {
 	letter-spacing: -0.1px;
 	line-height: 1;
 	@include animation(blur-in 2s 1);
+    margin-top: 10%;
 }
 
 .drip {
@@ -148,16 +145,18 @@ a {
 	margin-bottom: 0;
 }
 
-#arrow {
-	margin-top: 0;
-	display: block;
-	font-size: $title_font;
-	color: $border_color_start;
-	cursor: pointer;
+#down-arrow {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: $date_size/2;
+    height: $date_size/2;
 }
 
-#arrow:hover { 
-	color: $border_color_end;
+#down-arrow:hover {
+    color: blue;
+    cursor: pointer;
 }
 
 // keyframes
