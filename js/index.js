@@ -42,6 +42,7 @@ $(function () {
 			}
 		}
 
+        width = width + 10;
 		$('#img-bottom i').map(function () {
 			var icon = $(this).get(0);
 			$(icon).css({
