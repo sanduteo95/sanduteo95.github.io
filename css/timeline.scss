@@ -15,7 +15,7 @@
 		left: 50%;
 		height: 100%;
 		width: 4px;
-		background: $border_color_start;
+		background: $light_accent;
 	}
 }
 
@@ -39,14 +39,14 @@
 	left: 50%;
 	padding: 2em;
 	position: relative;
-	border-radius: 2em;
 	text-align: center; 
-	background-color: white;
-	box-shadow: 0 0 0 4px $border_color_start, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+	background-color: $light_accent;
+	box-shadow: 0 0 0 4px $light_accent, 0 3px 0 4px rgba(#000, .05) ;
 	
 	span {
 		font-weight: bold;
 		font-size: 46px;
+        color: white;
 	}
 }
 
@@ -60,7 +60,7 @@
 	height: $date_size;
 	border-radius: 50%;
 	background-color: white;
-	box-shadow: 0 0 0 4px $border_color_start, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+	box-shadow: 0 0 0 4px $light_accent, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
 	// horizontal alignment
 	text-align: center; 
 	
@@ -81,12 +81,12 @@
 	visibility: inherit;
 	position: relative;
 	margin-top: $date_size/2;
-	margin-left: 0;
+    margin-left: $date_size/4;
 	width: 40%;
-	background: white;
-	border-radius: .5em;
-	padding: 1em;
-	box-shadow: 0 3px 0 darken(white, 5%);
+	background: $box_color;
+//	border-radius: .5em;
+//	padding: 1em;
+	box-shadow: 0 3px 0 darken($box_color, 10%);
     
 	h2 {
 		color: black;
@@ -107,22 +107,32 @@
 		height: 0;
 		width: 0;
 		border: 7px solid transparent;
-		border-right: 7px solid white;
+		border-right: 7px solid $light_accent;
 	}
 	
 	.block-timeline:nth-child(even) & {
 		float: right;
+        margin-left: 0;
+        margin-right: $date_size/4;
 
 		&::before {
 			content: '';
-			top: 24px;
+			top: $date_size/2;
 			right: 100%;
 			left: auto;
 			width: 0px;
 			height: 0px;
 			border-color: transparent;
-			border-right-color: white;
+			border-right-color: $light_accent;
 		}
+        
+        #section-timeline {
+            text-align: left;
+            
+            span {
+                padding-left: 1em;
+            }
+        }
 	}
 }
 
@@ -135,13 +145,13 @@
 		height: 0;
 		width: 0;
 		border: 7px solid transparent;
-		border-left: 7px solid white;
+		border-left: 7px solid $light_accent;
 	}
 }
 
 @media screen and (max-width: 768px) {
     #title-timeline { 
-        left: 24%;
+        left: 20%;
         
         span {
             font-weight: bold;
@@ -151,18 +161,29 @@
     
     .content-timeline {
         width: 60%;
+        margin-left: 0;
+        margin-right: $date_size/4;
+        
         .block-timeline:nth-child(odd) & {
             float: right;
 
             &::before {
                 content: '';
-                top: 24px;
+                top: $date_size/2;
                 right: 100%;
                 left: auto;
                 width: 0px;
                 height: 0px;
                 border-color: transparent;
-                border-right-color: white;
+                border-right-color: $light_accent;
+            }
+            
+            #section-timeline {
+                text-align: left;
+                
+                span {
+                    padding-left: 1em;
+                }
             }
         }
     }
@@ -181,7 +202,7 @@
             left: 20%;
             height: 100%;
             width: 4px;
-            background: $border_color_start;
+            background: $light_accent;
         }
     }
 }
@@ -209,4 +230,21 @@
   100% {
     transform: scale(1);
   }
+}
+
+#section-timeline {
+    width: 100%;
+    margin-top: 0;
+    background: $light_accent;
+    padding-top: 1em;
+    text-align: right;
+    padding-bottom: 1em;
+    
+    span {
+        padding-right: 1em;
+    }
+}
+
+#description-timeline {
+    margin: 1em;
 }

@@ -1,15 +1,19 @@
-$font: 'Helvetica Neue', sans-serif;
-$icon_font: 20px;
-$normal_font: 14px;
-$title_font: 50px;
-	
-$border_color_start: #e4cdd7;
-$border_color_middle: #b06d8a;
-$border_color_end: #b06d8a;
-$border_width: 10px;
+//$font: 'Helvetica Neue', sans-serif;
+$font: 'Open Sans Condensed', sans-serif;
 
-$lightgrey: #E8E8E8;
+$icon_font: 1.5em;
+$normal_font: 15px;
+$title_font: 4em;
+	
+$light_accent: #e4cdd7; // #c9c5fd;
+$dark_accent: #b06d8a; // #8a94dc;
+
+$border_width: 0.65em;
+
+$background: #f6eef2; // #E8E8E8; // #8a94dc;
+
+$box_color: white; // #c9c5fd;
 
 $width: 400px;
 
-$date_size: 75px;
+$date_size: 6em;
