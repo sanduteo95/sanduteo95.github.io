@@ -14,7 +14,7 @@
 		top: 0;
 		left: 50%;
 		height: 100%;
-		width: 4px;
+		width: 0.25em;
 		background: $light_accent;
 	}
 }
@@ -41,11 +41,11 @@
 	position: relative;
 	text-align: center; 
 	background-color: $light_accent;
-	box-shadow: 0 0 0 4px $light_accent, 0 3px 0 4px rgba(#000, .05) ;
+	box-shadow: 0 0 0 0.25em $light_accent, 0 0.2em 0 0.25em rgba(#000, .05) ;
 	
 	span {
 		font-weight: bold;
-		font-size: 46px;
+		font-size: 3*$title_font/4;
         color: white;
 	}
 }
@@ -60,7 +60,7 @@
 	height: $date_size;
 	border-radius: 50%;
 	background-color: white;
-	box-shadow: 0 0 0 4px $light_accent, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+	box-shadow: 0 0 0 0.25em $light_accent, inset 0 0.12em 0 rgba(#000, .08), 0 0.2em 0 0.25em rgba(#000, .05) ;
 	// horizontal alignment
 	text-align: center; 
 	
@@ -84,21 +84,12 @@
     margin-left: $date_size/4;
 	width: 40%;
 	background: $box_color;
-//	border-radius: .5em;
-//	padding: 1em;
-	box-shadow: 0 3px 0 darken($box_color, 10%);
+	box-shadow: 0 0.2em 0 darken($box_color, 10%);
     
 	h2 {
 		color: black;
 	}
 
-	p {
-		display: inline-block;
-		font-size: $normal_font;
-		margin: 0.5em 0;
-		line-height: 1.6;
-	}
-	
 	&::before {
 		content: '';
 		position: absolute;
@@ -106,8 +97,8 @@
 		right: 100%;
 		height: 0;
 		width: 0;
-		border: 7px solid transparent;
-		border-right: 7px solid $light_accent;
+		border: 0.45em solid transparent;
+		border-right: 0.45em solid $light_accent;
 	}
 	
 	.block-timeline:nth-child(even) & {
@@ -120,8 +111,8 @@
 			top: $date_size/2;
 			right: 100%;
 			left: auto;
-			width: 0px;
-			height: 0px;
+			width: 0em;
+			height: 0em;
 			border-color: transparent;
 			border-right-color: $light_accent;
 		}
@@ -144,67 +135,9 @@
 		left: 100%;
 		height: 0;
 		width: 0;
-		border: 7px solid transparent;
-		border-left: 7px solid $light_accent;
+		border: 0.45em solid transparent;
+		border-left: 0.45em solid $light_accent;
 	}
-}
-
-@media screen and (max-width: 768px) {
-    #title-timeline { 
-        left: 20%;
-        
-        span {
-            font-weight: bold;
-            font-size: 32px;
-        }
-    }
-    
-    .content-timeline {
-        width: 60%;
-        margin-left: 0;
-        margin-right: $date_size/4;
-        
-        .block-timeline:nth-child(odd) & {
-            float: right;
-
-            &::before {
-                content: '';
-                top: $date_size/2;
-                right: 100%;
-                left: auto;
-                width: 0px;
-                height: 0px;
-                border-color: transparent;
-                border-right-color: $light_accent;
-            }
-            
-            #section-timeline {
-                text-align: left;
-                
-                span {
-                    padding-left: 1em;
-                }
-            }
-        }
-    }
-    
-    .date-timeline {
-        position: absolute;
-        top: 0;
-        left: 20%;
-    }
-    
-    #timeline {
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 20%;
-            height: 100%;
-            width: 4px;
-            background: $light_accent;
-        }
-    }
 }
 
 .is-hidden {
@@ -241,10 +174,78 @@
     padding-bottom: 1em;
     
     span {
+        font-size: 1.3em;
         padding-right: 1em;
     }
 }
 
 #description-timeline {
+    display: inline-block;
+    font-size: 1em;
     margin: 1em;
+    line-height: 1.6;
 }
+
+//media queries
+
+@media screen and (max-width: 768px) {
+    #title-timeline { 
+        left: 20%;
+    }
+    
+    .content-timeline {
+        width: 60%;
+        margin-left: 0;
+        margin-right: $date_size/4;
+        
+        .block-timeline:nth-child(odd) & {
+            float: right;
+
+            &::before {
+                content: '';
+                top: $date_size/2;
+                right: 100%;
+                left: auto;
+                width: 0em;
+                height: 0em;
+                border-color: transparent;
+                border-right-color: $light_accent;
+            }
+            
+            #section-timeline {
+                text-align: left;
+                
+                span {
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+    
+    .date-timeline {
+        position: absolute;
+        top: 0;
+        left: 20%;
+    }
+    
+    #timeline {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 20%;
+            height: 100%;
+            width: 0.25em;
+            background: $light_accent;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {    
+    #section-timeline {
+        span {
+            padding: 0;
+        }
+    }
+}
+

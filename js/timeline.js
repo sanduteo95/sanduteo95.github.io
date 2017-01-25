@@ -1,10 +1,12 @@
 $(function () {
 	"use strict";
-	$('.block-timeline').each(function() {
-		if(!isScrolledIntoView(this)) {
-			$(this).addClass('is-hidden');
-		}
-	});
+    if($(window).width() > 768) {
+        $('.block-timeline').each(function() {
+            if(!isScrolledIntoView(this)) {
+                $(this).addClass('is-hidden');
+            }
+	   });
+    }
 	
 	$(window).resize(function () {
 		hideContent();

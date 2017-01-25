@@ -1,3 +1,9 @@
+.notransition {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important; }
+
 html {
   display: table;
   font: 15px "Open Sans Condensed", sans-serif;
@@ -49,17 +55,12 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-size: 4em;
   font-weight: bold;
-  letter-spacing: -0.1px;
-  line-height: 1;
-  -webkit-animation: blur-in 2s 1;
-  -moz-animation: blur-in 2s 1;
-  -o-animation: blur-in 2s 1;
-  -ms-transition: blur-in 2s 1;
-  animation: blur-in 2s 1; }
+  letter-spacing: -0.01em;
+  line-height: 1; }
 
 .drip {
   color: #e4cdd7;
-  text-shadow: 1px 1px 0.5px black; }
+  text-shadow: 0.08em 0.08em 0.03em black; }
 
 #nav {
   margin: 0 auto;
@@ -139,7 +140,7 @@ a {
   display: inline-block;
   color: black;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1em;
   margin-top: 1em;
   margin-bottom: 0; }
 
@@ -154,8 +155,8 @@ a {
   margin-right: 1.5em; }
 
 #down-arrow:hover {
-  -webkit-filter: drop-shadow(0px 0px 5px #b06d8a);
-  filter: drop-shadow(0px 16px 0px 5px #b06d8a);
+  -webkit-filter: drop-shadow(0em 0em 0.3em #b06d8a);
+  filter: drop-shadow(0em 1.1em 0em 0.3em #b06d8a);
   cursor: pointer; }
 
 @keyframes pop-up {
@@ -177,41 +178,33 @@ a {
   100% {
     display: block;
     opacity: 1; } }
+@media screen and (max-width: 768px) {
+  #down-arrow {
+    display: none; } }
 @media screen and (max-width: 425px) {
-  #header {
-    font-size: 25px; }
+  body {
+    font-size: 10px; }
 
   #img-middle {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    border: 5px solid #e4cdd7; }
-
-  #img-bottom i {
-    font-size: 10px;
-    margin: -5px; }
-
-  #more-info {
-    font-size: 8px; }
+    border: 0.3em solid #e4cdd7; }
 
   body #nav {
     width: 250px; } }
 @media screen and (max-height: 425px) {
-  #header {
-    font-size: 20px; }
+  body {
+    font-size: 10px; }
 
   #img-middle {
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-    border: 2px solid #e4cdd7; }
-
-  #img-bottom i {
-    font-size: 8px;
-    margin: -4px; }
-
-  #more-info {
-    font-size: 6px; }
+    border: 0.15 solid #e4cdd7; }
 
   body #nav {
     width: 150px; } }
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 7.5px; } }
 
 /*# sourceMappingURL=index.css.map */

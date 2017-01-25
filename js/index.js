@@ -14,21 +14,38 @@ function loadPage(page) {
 
 $(function () {
 	"use strict";
-	$('li').map(function () {
-        $(this).hide();
-    });
 	
-	setTimeout(function () {
-		$('#img-middle').removeClass('img-pop-up');
-		$('li').map(function () {
-			$(this).show();
-		});
-	}, 1000);
+    if($(window).width() <= 768) {
+        $('#img-middle').removeClass('img-pop-up');
+        $('#header').addClass('notransition'); 
+        $('#more-info').removeClass('blur-in'); 
+        $('li').map(function () {
+             $(this).removeClass('blur-in');
+        });
+    } else {
+        $('li').map(function () {
+            $(this).hide();
+        });
+        $('#more-info').hide();
+        $('#down-arrow').hide();
+        
+        setTimeout(function () {
+            $('#img-middle').removeClass('img-pop-up');
+            $('#more-info').show();
+            $('#down-arrow').show();
+            $('li').map(function () {
+                $(this).show();
+            });
+        }, 1000);
+    }
 
 	$(window).resize(function () {
-		
-		$('#first-page').css('height', $(window).height() +'px');
-        
+        var height = $(window).outerHeight();
+//         var height = document.documentElement.clientHeight;
+//        var height = window.innerHeight ? window.innerHeight : $(window).height()
+		$('#first-page').css('height', height +'px');
+        $('#more-info').innerHTML = "The height of this page is " + height;
+
 		var width = $('#img-bottom').width();
 		var angle = 180 / ($('#img-bottom i').length - 1);
 		var rot = 180;

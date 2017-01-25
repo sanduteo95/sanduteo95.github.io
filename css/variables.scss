@@ -17,3 +17,10 @@ $box_color: white; // #c9c5fd;
 $width: 400px;
 
 $date_size: 6em;
+
+.notransition {
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    animation: none !important;
+}
