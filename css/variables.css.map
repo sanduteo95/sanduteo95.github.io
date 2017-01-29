@@ -1,7 +1,9 @@
 {
-"version": 3,
-"mappings": "AAoBA,aAAc;EACV,iBAAiB,EAAE,eAAe;EAClC,cAAc,EAAE,eAAe;EAC/B,YAAY,EAAE,eAAe;EAC7B,SAAS,EAAE,eAAe",
-"sources": ["variables.scss"],
-"names": [],
-"file": "variables.css"
+  "version": 3,
+  "file": "variables.css",
+  "sources": [
+    "variables.scss"
+  ],
+  "mappings": ";AAoBA,AAAA,aAAa,CAAC;EACV,iBAAiB,EAAE,eAAgB;EACnC,cAAc,EAAE,eAAgB;EAChC,YAAY,EAAE,eAAgB;EAC9B,SAAS,EAAE,eAAgB,GAC9B",
+  "names": []
 }

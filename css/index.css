@@ -5,7 +5,6 @@
   animation: none !important; }
 
 html {
-  display: table;
   font: 15px "Open Sans Condensed", sans-serif;
   width: 100%;
   height: 100%;
@@ -28,6 +27,7 @@ body {
   display: table; }
 
 #second-page {
+  height: 100%;
   width: 100%;
   height: auto;
   background-color: #f6eef2; }
@@ -59,8 +59,7 @@ a {
   line-height: 1; }
 
 .drip {
-  color: #e4cdd7;
-  text-shadow: 0.08em 0.08em 0.03em black; }
+  color: #e4cdd7; }
 
 #nav {
   margin: 0 auto;
@@ -179,8 +178,13 @@ a {
     display: block;
     opacity: 1; } }
 @media screen and (max-width: 768px) {
-  #down-arrow {
-    display: none; } }
+  .drip {
+    color: #e4cdd7;
+    text-shadow: 0.04em 0.04em 0.015em black; } }
+@media screen and (max-height: 768px) {
+  .drip {
+    color: #e4cdd7;
+    text-shadow: 0.02em 0.02em 0.007em black; } }
 @media screen and (max-width: 425px) {
   body {
     font-size: 10px; }
@@ -199,7 +203,7 @@ a {
   #img-middle {
     width: calc(100% - 4px);
     height: calc(100% - 4px);
-    border: 0.15 solid #e4cdd7; }
+    border: 0.15em solid #e4cdd7; }
 
   body #nav {
     width: 150px; } }

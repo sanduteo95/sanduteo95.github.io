@@ -30,6 +30,7 @@ function hideContent() {
 		}
 	});
 }
+
 function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();

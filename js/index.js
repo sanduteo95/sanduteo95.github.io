@@ -22,6 +22,7 @@ $(function () {
         $('li').map(function () {
              $(this).removeClass('blur-in');
         });
+        $('#down-arrow').removeClass('blur-in');
     } else {
         $('li').map(function () {
             $(this).hide();
@@ -40,12 +41,6 @@ $(function () {
     }
 
 	$(window).resize(function () {
-        var height = $(window).outerHeight();
-//         var height = document.documentElement.clientHeight;
-//        var height = window.innerHeight ? window.innerHeight : $(window).height()
-		$('#first-page').css('height', height +'px');
-        $('#more-info').innerHTML = "The height of this page is " + height;
-
 		var width = $('#img-bottom').width();
 		var angle = 180 / ($('#img-bottom i').length - 1);
 		var rot = 180;
@@ -99,7 +94,7 @@ $(function () {
     
 	$('#down-arrow').click(function () {
         $('html, body').animate({
-            scrollTop: $("#second-page").offset().top
+            scrollTop: $('#second-page').offset().top
         }, 2000);
 	});
 });
