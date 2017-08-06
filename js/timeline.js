@@ -12,12 +12,15 @@ $(function () {
 		hideContent();
 		
 		var width = $('#title-timeline').width()+parseInt($('#title-timeline').css('padding-left'))+parseInt($('#title-timeline').css('padding-right'));
-		$('#title-timeline').css('margin-left', -width/2+'px');
-        
-        $('#title-timeline').css('margin-top', $(window).height() * 10/100 +'px');
 	});
 	$(window).resize();
 	
+    $('.description-timeline').each(function() {
+        if(this.length == 0) {
+            this.style.display = 'none';
+        }
+    });
+    
 	$(window).on('scroll', function() {
 		hideContent();
 	});
