@@ -33,6 +33,8 @@
 #title-timeline {
   display: inline-block;
   left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10%;
   padding: 2em;
   position: relative;
   text-align: center;
