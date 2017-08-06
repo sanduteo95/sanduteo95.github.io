@@ -34,7 +34,7 @@
   display: inline-block;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 2em;
   position: relative;
   text-align: center;
@@ -141,7 +141,7 @@
     padding-right: 1em;
     display: inline-block; }
 
-#description-timeline {
+.description-timeline {
   display: inline-block;
   font-size: 1em;
   margin: 1em;
