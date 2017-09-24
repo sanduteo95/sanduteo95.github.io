@@ -23,10 +23,12 @@ $(function() {
     })
     $('#down-arrow').removeClass('blur-in')
   } else {
+    $('#header').hide()
     $('#more-info').hide()
     $('#down-arrow').hide()
 
     setTimeout(function() {
+      $('#header').show()
       $('#img-middle').removeClass('img-pop-up')
       $('#more-info').show()
       $('#down-arrow').show()

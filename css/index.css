@@ -56,7 +56,8 @@ a {
   font-size: 4em;
   font-weight: bold;
   letter-spacing: -0.01em;
-  line-height: 1; }
+  line-height: 1;
+  margin-top: -0.65em; }
 
 .drip {
   color: #e4cdd7; }
