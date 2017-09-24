@@ -1,37 +1,38 @@
-$(function () {
-	"use strict";
-    if($(window).width() > 768) {
+$(function() {
+    "use strict";
+    if ($(window).width() > 768) {
         $('.block-timeline').each(function() {
-            if(!isScrolledIntoView(this)) {
+						var date = $(this).find('.date-timeline')
+            if (!isScrolledIntoView(date)) {
                 $(this).addClass('is-hidden');
             }
-	   });
+        });
     }
-	
-	$(window).resize(function () {
-		hideContent();
-		
-		var width = $('#title-timeline').width()+parseInt($('#title-timeline').css('padding-left'))+parseInt($('#title-timeline').css('padding-right'));
-	});
-	$(window).resize();
-	
+
+    $(window).resize(function() {
+        hideContent();
+        var width = $('#title-timeline').width() + parseInt($('#title-timeline').css('padding-left')) + parseInt($('#title-timeline').css('padding-right'));
+    });
+    $(window).resize();
+
     $('.description-timeline').each(function() {
-        if(this.length == 0) {
+        if (this.length == 0) {
             this.style.display = 'none';
         }
     });
-    
-	$(window).on('scroll', function() {
-		hideContent();
-	});
+
+    $(window).on('scroll', function() {
+        hideContent();
+    });
 });
 
 function hideContent() {
-	$('.block-timeline').each(function() {
-		if(isScrolledIntoView(this) && $(this).hasClass('is-hidden')) {
-			$(this).removeClass('is-hidden').addClass('bounce-in');
-		}
-	});
+    $('.block-timeline').each(function() {
+				var date = $(this).find('.date-timeline')
+        if (isScrolledIntoView(date) && $(this).hasClass('is-hidden')) {
+            $(this).removeClass('is-hidden').addClass('bounce-in');
+        }
+    });
 }
 
 function isScrolledIntoView(elem) {
