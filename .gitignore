@@ -2,5 +2,3 @@
 node_modules
 css/.sass-cache
 css/ie/.sass-cache
-css/ie/*.scss
-css/*.scss
