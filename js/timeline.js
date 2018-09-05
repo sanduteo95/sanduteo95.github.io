@@ -53,7 +53,11 @@ function loadTimeline() {
     {
       title: 'IBM SOFTWARE ENGINEER',
       date: 'Jul 2017',
-      description: ''
+      description: 'Part of the Hybrid Integration department, I worked as a full-stack developer on a cloud product built on top of a micro-service architecture.  Collaborating with a variety of developers, architects, and designers, I contributed to implementing numerous aspects of the user-interface using AngularJS, React, HTML and Sass, and got involved in developing the persistence and API layers of various micro-services in Node.js. Being part of a department that practiced agile and DevOps, I was required to use a variety of tools to benefit our continuous delivery strategies, such as Jenkins, Travis, Artifactory and GitHub.  As a result of my skills I took on the role as the squad\'s leading front-end developer and was part of a group who started a side-project focused on improving the front-end.'
+    }, {
+      title: 'SOFTWARE DESGIN STUDY',
+      date: 'Jan 2017',
+      description: 'As part of my course I worked in a team of five, leading brainstorming and ideation sessions, as well as conducting in-depth research based on client feedback, personas, and QOC analysis. Our task was to come up with innovative applications in the automobile industry, based on weekly challenges set by our client. My main contribution was designing a high-level mock-up of an app using Sketch and InVision, guided by an iterative design thinking process. I also designed a technical poster using Photoshop and LaTeX, which was used together with a promotional video, also created by the team.'
     },
     {
       title: 'CODE CLUB',

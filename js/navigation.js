@@ -43,7 +43,7 @@ function loadNavigation() {
     {
       title: 'linkedin',
       icon: 'linkedin',
-      link: 'https://uk.linkedin.com/in/teodora-sandu-b66b5b106'
+      link: 'https://uk.linkedin.com/in/teodora-sandu'
     },
     {
       title: 'github',
@@ -63,12 +63,12 @@ function loadNavigation() {
     {
       title: 'email',
       icon: 'envelope-o',
-      link: '../CV.pdf'
+      link: 'mailto:sanduteo95@gmail.com'
     },
     {
       title: 'cv',
       icon: 'file-text-o',
-      link: 'mailto:sanduteo95@gmail.com'
+      link: './CV.pdf'
     }
   ];
 
@@ -87,11 +87,11 @@ function loadNavigation() {
       });
     } else {
         if(links[j].title === 'email') {
-          var a = $('<a/>')
+          var a = $('<a target="_blank"/>')
             .attr('href', links[j].link)
             .html(i)
         } else {
-          var a = $('<a/>')
+          var a = $('<a target="_blank"/>')
             .attr('href', links[j].link)
             .attr('download', 'CV Teodora Sandu')
             .html(i)
