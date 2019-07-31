@@ -131,6 +131,22 @@
     padding-right: 1em;
     display: inline-block; }
 
+.section-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  margin-bottom: -5px;
+}
+
+.right-icon {
+  margin-right: 20px;
+}
+
+.left-icon {
+  margin-left: 20px;
+  margin-right: -10px;
+}
+
 .description-timeline {
   display: inline-block;
   font-size: 1em;

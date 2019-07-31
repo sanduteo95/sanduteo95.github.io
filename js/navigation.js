@@ -42,40 +42,40 @@ function loadNavigation() {
   var links = [
     {
       title: 'linkedin',
-      icon: 'linkedin',
+      icon: 'fab fa-linkedin',
       link: 'https://uk.linkedin.com/in/teodora-sandu'
     },
     {
       title: 'github',
-      icon: 'github',
+      icon: 'fab fa-github-square',
       link: 'https://github.com/sanduteo95/'
     },
     {
       title: 'facebook',
-      icon: 'facebook',
+      icon: 'fab fa-facebook-square',
       link: 'https://www.facebook.com/sanduteo95'
     },
     {
       title: 'twitter',
-      icon: 'twitter',
+      icon: 'fab fa-twitter-square',
       link: 'https://twitter.com/sanduteo95'
     },
     {
       title: 'email',
-      icon: 'envelope-o',
+      icon: 'fas fa-envelope-square',
       link: 'mailto:sanduteo95@gmail.com'
     },
     {
       title: 'cv',
-      icon: 'file-text-o',
+      icon: 'fas fa-portrait',
       link: './CV.pdf'
     }
   ];
 
   var nav = $('#img-bottom')
   $.each(links, function(j) {
-    var i = $('<i/>')
-      .addClass('fa fa-' + links[j].icon)
+    var i = $('<i style="color: black;"/>')
+      .addClass(links[j].icon)
     var li = $('<div/>')
       .addClass('blur-in')
     if(links[j].title !== 'email' && links[j].title !== 'cv') {
