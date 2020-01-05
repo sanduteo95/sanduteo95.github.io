@@ -51,16 +51,6 @@ function loadNavigation() {
       link: 'https://github.com/sanduteo95/'
     },
     {
-      title: 'facebook',
-      icon: 'fab fa-facebook-square',
-      link: 'https://www.facebook.com/sanduteo95'
-    },
-    {
-      title: 'twitter',
-      icon: 'fab fa-twitter-square',
-      link: 'https://twitter.com/sanduteo95'
-    },
-    {
       title: 'email',
       icon: 'fas fa-envelope-square',
       link: 'mailto:sanduteo95@gmail.com'
@@ -74,7 +64,7 @@ function loadNavigation() {
 
   var nav = $('#img-bottom')
   $.each(links, function(j) {
-    var i = $('<i style="color: black;"/>')
+    var i = $('<i/>')
       .addClass(links[j].icon)
     var li = $('<div/>')
       .addClass('blur-in')

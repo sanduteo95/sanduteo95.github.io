@@ -16,7 +16,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #f6eef2; }
+  background: #e5e6ec; }
 
 #first-page {
   width: 100%;
@@ -30,7 +30,7 @@ body {
   height: 100%;
   width: 100%;
   height: auto;
-  background-color: #f6eef2; }
+  background-color: #8a94dc; }
 
 a {
   text-decoration: none; }
@@ -60,7 +60,7 @@ a {
   margin-top: -0.65em; }
 
 .drip {
-  color: #e4cdd7; }
+  color: #c9c5fd; }
 
 #nav {
   margin: 0 auto;
@@ -81,8 +81,8 @@ a {
   right: 0; }
 
 #img-middle {
-  width: calc(100% - 1.3em);
-  border: 0.65em solid #e4cdd7;
+  width: 90%;
+  border: 0.65em solid #8a94dc;
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
@@ -118,6 +118,7 @@ a {
   left: 50%;
   font-size: 1.5em;
   margin: -0.5em;
+  color: #8a94dc;
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
@@ -139,7 +140,8 @@ a {
   display: inline-block;
   color: black;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: 500;
   margin-top: 1em;
   margin-bottom: 0; }
 
@@ -154,6 +156,8 @@ a {
   margin-right: 1.5em; }
 
 #down-arrow:hover {
+  -webkit-filter: drop-shadow(0em 0em 0.3em #8a94dc);
+  filter: drop-shadow(0em 1.1em 0em 0.3em #8a94dc);
   cursor: pointer; }
 
 @keyframes pop-up {
@@ -177,20 +181,19 @@ a {
     opacity: 1; } }
 @media screen and (max-width: 768px) {
   .drip {
-    color: #e4cdd7;
+    color: #c9c5fd;
     text-shadow: 0.04em 0.04em 0.015em black; } }
 @media screen and (max-height: 768px) {
   .drip {
-    color: #e4cdd7;
+    color: #c9c5fd;
     text-shadow: 0.02em 0.02em 0.007em black; } }
 @media screen and (max-width: 425px) {
   body {
     font-size: 10px; }
 
   #img-middle {
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
-    border: 0.3em solid #e4cdd7; }
+    width: 90%;
+    border: 0.3em solid #8a94dc; }
 
   body #nav {
     width: 250px; } }
@@ -199,9 +202,8 @@ a {
     font-size: 10px; }
 
   #img-middle {
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-    border: 0.15em solid #e4cdd7; }
+    width: 90%;
+    border: 0.15em solid #8a94dc; }
 
   body #nav {
     width: 150px; } }
