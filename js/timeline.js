@@ -1,4 +1,4 @@
-g$(function() {
+$(function() {
   "use strict";
   loadTimeline()
 
@@ -143,7 +143,7 @@ function loadTimeline() {
     var span2 = $('<span/>')
       .text(experiences[i].title)
 
-    if (i % 2 == 0) {
+    if (i % 2 == 0 && $(window).width() > 768) {
       icon[0].className += ' right-icon'
 
       var section = $('<h2/>')
