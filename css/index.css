@@ -181,11 +181,12 @@ a {
     opacity: 1; } }
 @media screen and (max-width: 768px) {
   .drip {
-    color: #c9c5fd;
-    text-shadow: 0.04em 0.04em 0.015em black; } }
+    color: #8a94dc;
+    text-shadow: 0.04em 0.04em 0.015em black;
+    margin-top: 0 !important; } }
 @media screen and (max-height: 768px) {
   .drip {
-    color: #c9c5fd;
+    color: #8a94dc;
     text-shadow: 0.02em 0.02em 0.007em black; } }
 @media screen and (max-width: 425px) {
   body {

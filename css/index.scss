@@ -195,13 +195,14 @@ a {
 // media queries
 @media screen and (max-width: 768px) {
 	.drip {
-		color: $light_accent;
+		color: $dark_accent;
 		text-shadow: 0.04em 0.04em 0.015em black;
+		margin-top: 0 !important;
 	}
 }
 @media screen and (max-height: 768px) {
 	.drip {
-		color: $light_accent;
+		color: $dark_accent;
 		text-shadow: 0.02em 0.02em 0.007em black;
 	}
 }
