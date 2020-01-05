@@ -30,7 +30,7 @@ body {
 	height: 100%;
 	width: 100%;
 	height: auto;
-	background-color: $background;
+	background-color: $dark_accent;
 }
 
 a {
@@ -91,9 +91,8 @@ a {
 }
 
 #img-middle {
-	width: calc(100% - #{2 * $border_width});
-	height: calc(100% - #{2 * $border_width});
-	border: $border_width solid $light_accent;
+	width: 90%;
+	border: $border_width solid $dark_accent;
 	@include border_radius();
 }
 
@@ -120,6 +119,7 @@ a {
 	left: 50%;
 	font-size: $icon_font;
 	margin: -$icon_font/3;
+	color: $dark_accent;
 	@include border_radius();
 	cursor: pointer;
 }
@@ -136,7 +136,8 @@ a {
 	display: inline-block;
 	color: black;
 	text-decoration: none;
-	font-size: 1em;
+	font-size: 1.2em;
+	font-weight: 500;
 	margin-top: 1em;
 	margin-bottom: 0;
 }
@@ -210,9 +211,8 @@ a {
 	}
 
 	#img-middle {
-		width: calc(100% - 10px);
-		height: calc(100% - 10px);
-		border: 0.3em solid $light_accent;
+		width: 90%;
+		border: 0.3em solid $dark_accent;
 	}
 
 	body #nav {
@@ -225,9 +225,8 @@ a {
 	}
 
 	#img-middle {
-		width: calc(100% - 4px);
-		height: calc(100% - 4px);
-		border: 0.15em solid $light_accent;
+		width: 90%;
+		border: 0.15em solid $dark_accent;
 	}
 
 	body #nav {

@@ -6,7 +6,8 @@
   	position: relative;
 	padding: 2em 0;
 	margin-bottom: 0;
-	margin-top: 0;
+    margin-top: 0;
+    background-color: $dark_accent;
 
 	&::before {
 		content: '';
@@ -15,7 +16,7 @@
 		left: 50%;
 		height: 100%;
 		width: 0.25em;
-		background: $light_accent;
+		background-color: $light_accent;
 	}
 }
 
@@ -83,14 +84,20 @@
 	visibility: inherit;
 	position: relative;
 	margin-top: $date_size/2;
-  margin-left: $date_size/4;
+    margin-left: $date_size/4;
 	width: 40%;
-	background: $box_color;
+	background-color: $box_color;
 	box-shadow: 0 0.2em 0 darken($box_color, 10%);
 
 	h2 {
 		color: black;
 	}
+
+    .right-icon,
+    .left-icon {
+        color: white !important;
+        margin: .5em;
+    }
 
 	&::before {
 		content: '';
@@ -123,7 +130,6 @@
         text-align: left;
 
         span {
-            padding-left: 1em;
             display: inline-block;
         }
     }
@@ -228,7 +234,7 @@
             left: 20%;
             height: 100%;
             width: 0.25em;
-            background: $light_accent;
+            background-color: $light_accent;
         }
     }
 }
