@@ -22,6 +22,12 @@ $(function() {
         $(this).removeClass('blur-in')
     })
     $('#down-arrow-top').removeClass('blur-in')
+
+    $('#img-linkedin').removeClass('blur-in')
+    $('#img-github').removeClass('blur-in')
+    $('#img-cv').removeClass('blur-in')
+    $('#img-email').removeClass('blur-in')
+
   } else {
     $('#header').hide()
     $('#more-info').hide()

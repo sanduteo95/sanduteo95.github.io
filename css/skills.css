@@ -91,7 +91,8 @@
 
 @media screen and (max-width: 475px) {
   #skills {
-    padding: 2rem; }
+    padding-top: 2rem;
+    padding-bottom: 5rem; }
     #skills .skill-card {
       display: inline-table;
       margin: .5rem;

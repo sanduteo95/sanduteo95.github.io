@@ -73,7 +73,9 @@ function loadNavigation() {
     var i = $('<i/>')
       .addClass(links[j].icon)
     var li = $('<div/>')
-      .addClass('blur-in')
+    if ($(window).width() > 768) {
+      li.addClass('blur-in')
+    }
     if(links[j].title !== 'email' && links[j].title !== 'cv') {
       li
         .attr('id', 'img-' + links[j].title)
