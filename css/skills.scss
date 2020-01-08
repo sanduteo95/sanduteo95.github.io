@@ -27,14 +27,12 @@
 #skills {    
     width: 90%;
     display: inline-block;
-    height: 75%;
-    margin: 1em auto;
-    padding: 1em;
+    height: 80%;
     padding-left: 0;
     position: relative;
 
     .skill-card {
-        display: inline-block;
+        display: inline-table;
         background-color: #8a94dc;
         margin: 2rem;
         width: 20vw;
@@ -131,7 +129,7 @@
         .skill-card {
             margin: .5rem;
             width: 40vw;
-            height: 15vw;
+            height: 110px;
 
             .skill-card__header {
                 float: left;
@@ -150,56 +148,29 @@
             }
 
             .skill-card__body {
+                display: inline;
                 text-align: left;
                 transition: none;
-                margin-left: 45px;
-                margin-top: 20px;
+                margin-left: 10px;
 
                 .skill-card__title {
                     margin-bottom: 0;
                     background-color: transparent;
                     color: $dark;
                     box-shadow: none;
+                    text-align: center;
                 }
 
                 .skill-card__knowledge {
-                    padding-left: 1.5rem;
-                }
-            }
-
-            &:hover {
-                height: 70px;
-
-                .skill-card__header {
-                    display: none;
-                }
-
-                .skill-card__body {
-                    margin-left: 10px;
-                    height: 70px;
-                    margin-top: 10px;
-                    width: 100%;
+                    display: block;
     
-                    .skill-card__title {
-                        text-align: left;
-                        width: max-content;
+                    li {
+                        margin: 0;
+                        transform: none;
+                        -webkit-transform: none;
+                        transition: none;
                     }
-
-                    .skill-card__duration {
-                        float: left;
-                    }
-
-                    .skill-card__knowledge {
-                        display: flow-root;
-    
-                        li {
-                            margin: 0;
-                            transform: none;
-                            -webkit-transform: none;
-                            transition: none;
-                        }
-                    }
-                }   
+                }
             }
         }
     }

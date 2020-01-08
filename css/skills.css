@@ -26,13 +26,11 @@
 #skills {
   width: 90%;
   display: inline-block;
-  height: 75%;
-  margin: 1em auto;
-  padding: 1em;
+  height: 80%;
   padding-left: 0;
   position: relative; }
   #skills .skill-card {
-    display: inline-block;
+    display: inline-table;
     background-color: #8a94dc;
     margin: 2rem;
     width: 20vw;
@@ -100,7 +98,7 @@
   #skills .skill-card {
     margin: .5rem;
     width: 40vw;
-    height: 15vw; }
+    height: 110px; }
     #skills .skill-card .skill-card__header {
       float: left;
       left: 10px;
@@ -114,37 +112,22 @@
         width: 30px !important;
         height: 30px !important; }
     #skills .skill-card .skill-card__body {
+      display: inline;
       text-align: left;
       transition: none;
-      margin-left: 45px;
-      margin-top: 20px; }
+      margin-left: 10px; }
       #skills .skill-card .skill-card__body .skill-card__title {
         margin-bottom: 0;
         background-color: transparent;
         color: #424242;
-        box-shadow: none; }
+        box-shadow: none;
+        text-align: center; }
       #skills .skill-card .skill-card__body .skill-card__knowledge {
-        padding-left: 1.5rem; }
-    #skills .skill-card:hover {
-      height: 70px; }
-      #skills .skill-card:hover .skill-card__header {
-        display: none; }
-      #skills .skill-card:hover .skill-card__body {
-        margin-left: 10px;
-        height: 70px;
-        margin-top: 10px;
-        width: 100%; }
-        #skills .skill-card:hover .skill-card__body .skill-card__title {
-          text-align: left;
-          width: max-content; }
-        #skills .skill-card:hover .skill-card__body .skill-card__duration {
-          float: left; }
-        #skills .skill-card:hover .skill-card__body .skill-card__knowledge {
-          display: flow-root; }
-          #skills .skill-card:hover .skill-card__body .skill-card__knowledge li {
-            margin: 0;
-            transform: none;
-            -webkit-transform: none;
-            transition: none; } }
+        display: block; }
+        #skills .skill-card .skill-card__body .skill-card__knowledge li {
+          margin: 0;
+          transform: none;
+          -webkit-transform: none;
+          transition: none; } }
 
 /*# sourceMappingURL=skills.css.map */
