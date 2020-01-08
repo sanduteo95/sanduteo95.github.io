@@ -33,6 +33,9 @@ body {
   background-color: #c9c5fd;
   text-align: center; }
 
+@media screen and (max-width: 768px) {
+  .down-arrow {
+    display: none !important; } }
 #third-page {
   min-height: 100%;
   margin-top: -10px;
@@ -184,7 +187,7 @@ a {
   100% {
     display: block;
     opacity: 1; } }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
   body {
     font-size: 10px; }
 

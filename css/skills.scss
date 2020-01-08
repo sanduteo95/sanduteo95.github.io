@@ -123,13 +123,13 @@
 }
 
 //media queries
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
     #skills {
         .skill-card {
+            display: inline-table;
             margin: .5rem;
             width: 40vw;
-            height: 110px;
-
+            height: 100px;
             .skill-card__header {
                 float: left;
                 left: 10px;

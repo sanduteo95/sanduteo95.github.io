@@ -33,6 +33,13 @@ body {
 	text-align: center;
 }
 
+//media queries
+@media screen and (max-width: 768px) {
+	.down-arrow {
+		display: none !important;
+	}
+}
+
 #third-page {
 	min-height: 100%; 
 	margin-top: -10px; // don't know why
@@ -198,7 +205,7 @@ a {
 	}
 }
 // media queries
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
 	body {
 		font-size: 2*$normal_font/3;
 	}
