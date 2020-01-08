@@ -12,6 +12,7 @@ html {
   -moz-osx-font-smoothing: grayscale; }
 
 body {
+  -webkit-text-size-adjust: 100%;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -33,7 +34,7 @@ body {
   background-color: #c9c5fd;
   text-align: center; }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 768px) {
   .down-arrow {
     display: none !important; } }
 #third-page {
@@ -187,7 +188,7 @@ a {
   100% {
     display: block;
     opacity: 1; } }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
   body {
     font-size: 10px; }
 
