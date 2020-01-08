@@ -2,9 +2,15 @@ $(function() {
   "use strict";
   loadNavigation()
 
-  $('#down-arrow').click(function() {
+  $('#down-arrow-top').click(function() {
     $('html, body').animate({
       scrollTop: $('#second-page').offset().top
+    }, 2000)
+  });
+
+  $('#down-arrow-skills').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#third-page').offset().top
     }, 2000)
   });
 

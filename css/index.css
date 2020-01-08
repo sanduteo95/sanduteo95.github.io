@@ -27,7 +27,13 @@ body {
   display: table; }
 
 #second-page {
-  height: 100%;
+  width: 100%;
+  height: auto;
+  background-color: #c9c5fd;
+  text-align: center; }
+
+#third-page {
+  margin-top: -10px;
   width: 100%;
   height: auto;
   background-color: #8a94dc; }
@@ -35,15 +41,12 @@ body {
 a {
   text-decoration: none; }
 
-* {
-  max-width: 100%;
-  max-height: 100%; }
-
 #wrapper {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  overflow: none; }
+  overflow: none;
+  padding: 2em; }
 
 .row {
   margin-top: 0.65em;
@@ -60,7 +63,9 @@ a {
   margin-top: -0.65em; }
 
 .drip {
-  color: #c9c5fd; }
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: -1px 1px 0 #e5e6ec, -2px 2px 0 #8a94dc;
+  color: #424242; }
 
 #nav {
   margin: 0 auto;
@@ -118,16 +123,13 @@ a {
   left: 50%;
   font-size: 1.5em;
   margin: -0.5em;
-  color: #8a94dc;
+  color: #424242;
   border-top-left-radius: 50% 50%;
   border-top-right-radius: 50% 50%;
   border-bottom-left-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   border-radius: 50%;
   cursor: pointer; }
-
-.fa {
-  color: black !important; }
 
 .blur-in {
   -webkit-animation: blur-in 2s 1;
@@ -145,15 +147,16 @@ a {
   margin-top: 1em;
   margin-bottom: 0; }
 
-#down-arrow {
+.down-arrow {
   display: block;
-  position: absolute;
+  position: relative;
   left: 50%;
   bottom: 0;
   width: 3em;
   height: 3em;
   margin-left: -1.5em;
-  margin-right: 1.5em; }
+  margin-right: 1.5em;
+  cursor: pointer; }
 
 #down-arrow:hover {
   -webkit-filter: drop-shadow(0em 0em 0.3em #8a94dc);
@@ -179,15 +182,6 @@ a {
   100% {
     display: block;
     opacity: 1; } }
-@media screen and (max-width: 768px) {
-  .drip {
-    color: #8a94dc;
-    text-shadow: 0.04em 0.04em 0.015em black;
-    margin-top: 0 !important; } }
-@media screen and (max-height: 768px) {
-  .drip {
-    color: #8a94dc;
-    text-shadow: 0.02em 0.02em 0.007em black; } }
 @media screen and (max-width: 425px) {
   body {
     font-size: 10px; }

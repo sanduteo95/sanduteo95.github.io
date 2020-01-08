@@ -25,9 +25,15 @@ body {
 	background-color: white;
 	display: table;
 }
-
 #second-page {
-	height: 100%;
+	width: 100%;
+	height: auto;
+	background-color: $light_accent;
+	text-align: center;
+}
+
+#third-page {
+	margin-top: -10px; // don't know why
 	width: 100%;
 	height: auto;
 	background-color: $dark_accent;
@@ -37,16 +43,12 @@ a {
 	text-decoration: none;
 }
 
-* {
-	max-width: 100%;
-	max-height: 100%;
-}
-
 #wrapper {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 	overflow: none;
+	padding: 2em;
 }
 
 .row {
@@ -66,7 +68,9 @@ a {
 }
 
 .drip {
-	color: $light_accent;
+    font-family: 'Montserrat', sans-serif;
+	text-shadow: -1px 1px 0 $background, -2px 2px 0 $dark_accent;
+	color: $dark;
 }
 
 #nav {
@@ -119,13 +123,11 @@ a {
 	left: 50%;
 	font-size: $icon_font;
 	margin: -$icon_font/3;
-	color: $dark_accent;
+
+	color: $dark;
+	
 	@include border_radius();
 	cursor: pointer;
-}
-
-.fa {
-	color: black !important;
 }
 
 .blur-in {
@@ -142,15 +144,16 @@ a {
 	margin-bottom: 0;
 }
 
-#down-arrow {
+.down-arrow {
 	display: block;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	bottom: 0;
 	width: $date_size/2;
 	height: $date_size/2;
 	margin-left: -$date_size/4;
 	margin-right: $date_size/4;
+	cursor: pointer;
 }
 
 #down-arrow:hover {
@@ -193,19 +196,6 @@ a {
 	}
 }
 // media queries
-@media screen and (max-width: 768px) {
-	.drip {
-		color: $dark_accent;
-		text-shadow: 0.04em 0.04em 0.015em black;
-		margin-top: 0 !important;
-	}
-}
-@media screen and (max-height: 768px) {
-	.drip {
-		color: $dark_accent;
-		text-shadow: 0.02em 0.02em 0.007em black;
-	}
-}
 @media screen and (max-width: 425px) {
 	body {
 		font-size: 2*$normal_font/3;

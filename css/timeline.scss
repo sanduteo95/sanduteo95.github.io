@@ -4,7 +4,7 @@
 	float: left;
 	clear: left;
   	position: relative;
-	padding: 2em 0;
+	padding: 2rem;
 	margin-bottom: 0;
     margin-top: 0;
     background-color: $dark_accent;
@@ -12,9 +12,9 @@
 	&::before {
 		content: '';
 		position: absolute;
-		top: 0;
+		top: 2%;
 		left: 50%;
-		height: 100%;
+		height: 98%;
 		width: 0.25em;
 		background-color: $light_accent;
 	}
@@ -43,13 +43,13 @@
 	padding: 2em;
 	position: relative;
 	text-align: center;
-	background-color: $light_accent;
-	box-shadow: 0 0 0 0.25em $light_accent, 0 0.2em 0 0.25em rgba(#000, .05) ;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: -1px 1px 0 $background, -2px 2px 0 $dark_accent;
 
 	span {
 		font-weight: bold;
 		font-size: 3*$title_font/4;
-        color: white;
+        color: $dark;
 	}
 }
 
@@ -90,7 +90,8 @@
 	box-shadow: 0 0.2em 0 darken($box_color, 10%);
 
 	h2 {
-		color: black;
+        font-family: 'Montserrat', sans-serif;
+        color: $dark;
 	}
 
     .right-icon,
@@ -170,7 +171,7 @@
     padding-bottom: 1em;
 
     span {
-        font-size: 1.3em;
+        font-size: 1em;
         padding-right: 1em;
         display: inline-block;
     }
@@ -213,7 +214,6 @@
                 text-align: left;
 
                 span {
-                    padding-left: 1em;
                     display: inline-block;
                 }
             }
@@ -223,22 +223,42 @@
     .date-timeline {
         position: absolute;
         top: 0;
-        left: 20%;
+        left: 17.5%;
+        color: $dark;
     }
 
     #timeline {
         &::before {
-            content: '';
-            position: absolute;
-            top: 0;
+            top: 2%;
             left: 20%;
-            height: 100%;
-            width: 0.25em;
-            background-color: $light_accent;
+            height: 98%;
         }
     }
 }
 
+@media screen and (max-width: 425px) {
+    #timeline {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3%;
+            left: 22%;
+            height: 97%;
+            width: 0.25em;
+            background-color: $light_accent;
+        }
+    }
+
+    #section-timeline {
+        span {
+            margin-left: 10px;
+        }
+
+        i {
+            display: none;
+        }
+    }
+}
 
 @media screen and (max-width: 375px) {
     #section-timeline {
@@ -247,11 +267,22 @@
             display: inline-block;
         }
     }
+
+    #timeline {
+        &::before {
+            top: 3%;
+            left: 23%;
+            height: 97%;
+        }
+    }
 }
 
-@media only screen
-    and (max-device-width: 640px),
-    only screen and (max-device-width: 667px),
-    only screen and (max-width: 480px) {
-
+@media screen and (max-width: 320px) {
+    #timeline {
+        &::before {
+            top: 3%;
+            left: 23.5%;
+            height: 97%;
+        }
+    }
 }

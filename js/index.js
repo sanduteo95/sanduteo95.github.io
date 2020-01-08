@@ -21,17 +21,17 @@ $(function() {
     $('li').map(function() {
         $(this).removeClass('blur-in')
     })
-    $('#down-arrow').removeClass('blur-in')
+    $('#down-arrow-top').removeClass('blur-in')
   } else {
     $('#header').hide()
     $('#more-info').hide()
-    $('#down-arrow').hide()
+    $('#down-arrow-top').hide()
 
     setTimeout(function() {
       $('#header').show()
       $('#img-middle').removeClass('img-pop-up')
       $('#more-info').show()
-      $('#down-arrow').show()
+      $('#down-arrow-top').show()
     }, 1500)
   }
 
