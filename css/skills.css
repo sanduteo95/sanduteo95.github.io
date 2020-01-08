@@ -30,8 +30,7 @@
   padding-left: 0;
   position: relative; }
   #skills .skill-card {
-    display: inline-table;
-    background-color: #8a94dc;
+    display: inline-block;
     margin: 2rem;
     width: 20vw;
     background-color: #FFF;
