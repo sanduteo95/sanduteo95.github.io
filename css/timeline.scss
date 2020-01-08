@@ -230,8 +230,18 @@
     #timeline {
         &::before {
             top: 2%;
-            left: 20%;
+            left: 19.9%;
             height: 98%;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #timeline {
+        &::before {
+            top: 3%;
+            left: 21.5%;
+            height: 97%;
         }
     }
 }
@@ -239,13 +249,10 @@
 @media screen and (max-width: 425px) {
     #timeline {
         &::before {
-            content: '';
-            position: absolute;
             top: 3%;
             left: 22%;
             height: 97%;
             width: 0.25em;
-            background-color: $light_accent;
         }
     }
 
@@ -271,7 +278,7 @@
     #timeline {
         &::before {
             top: 3%;
-            left: 23%;
+            left: 22.6%;
             height: 97%;
         }
     }

@@ -3,8 +3,8 @@
 
 
 #title-skills {
-    height: 6em;
     padding: 2em;
+    margin-top: 5%;
     font-family: 'Montserrat', sans-serif;
     text-shadow: -1px 1px 0 $background, -2px 2px 0 $dark_accent;
 
@@ -21,6 +21,7 @@
 }
 
 #skills {    
+    padding-top: 3rem;
     width: 90%;
     display: inline-block;
     height: 80%;
@@ -121,12 +122,12 @@
 //media queries
 @media screen and (max-width: 475px) {
     #skills {
-        padding-top: 2rem;
         padding-bottom: 5rem;
-        
+
         .skill-card {
             display: inline-table;
             margin: .5rem;
+            margin-bottom: 1rem;
             width: 40vw;
             height: 100px;
             
