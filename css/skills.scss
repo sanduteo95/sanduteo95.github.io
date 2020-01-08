@@ -24,10 +24,10 @@
     }
 }
 
-#skills {
+#skills {    
     width: 90%;
     display: inline-block;
-    height: auto;
+    height: 75%;
     margin: 1em auto;
     padding: 1em;
     padding-left: 0;
@@ -131,11 +131,12 @@
         .skill-card {
             margin: .5rem;
             width: 40vw;
-            height: 10vw;
+            height: 15vw;
 
             .skill-card__header {
                 float: left;
                 left: 10px;
+                margin-top: 10px;
                 transition: none;
                 vertical-align:top;
                 height: 30px;
@@ -151,7 +152,8 @@
             .skill-card__body {
                 text-align: left;
                 transition: none;
-                margin-left: 40px;
+                margin-left: 45px;
+                margin-top: 20px;
 
                 .skill-card__title {
                     margin-bottom: 0;
@@ -175,6 +177,7 @@
                 .skill-card__body {
                     margin-left: 10px;
                     height: 70px;
+                    margin-top: 10px;
                     width: 100%;
     
                     .skill-card__title {
