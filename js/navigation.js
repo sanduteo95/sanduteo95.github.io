@@ -1,20 +1,20 @@
-$(function() {
+$(function () {
   "use strict";
   loadNavigation()
 
-  $('#down-arrow-top').click(function() {
+  $('#down-arrow-top').click(function () {
     $('html, body').animate({
       scrollTop: $('#second-page').offset().top
     }, 2000)
   });
 
-  $('#down-arrow-skills').click(function() {
+  $('#down-arrow-skills').click(function () {
     $('html, body').animate({
       scrollTop: $('#third-page').offset().top
     }, 2000)
   });
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     var width = $('#img-bottom').width()
     var angle = 180 / ($('#img-bottom i').length - 1)
     var rot = 180
@@ -29,7 +29,7 @@ $(function() {
     }
 
     width = width + 10
-    $('#img-bottom i').map(function() {
+    $('#img-bottom i').map(function () {
       var icon = $(this).get(0)
       $(icon).css({
         '-webkit-transform': 'rotate(' + rot + 'deg) translate(' + (width + border_width) / 2 + 'px) rotate(-' + rot + 'deg)',
@@ -45,8 +45,7 @@ $(function() {
 
 function loadNavigation() {
   "use strict";
-  var links = [
-    {
+  var links = [{
       title: 'linkedin',
       icon: 'fab fa-linkedin',
       link: 'https://uk.linkedin.com/in/teodora-sandu'
@@ -69,43 +68,44 @@ function loadNavigation() {
   ];
 
   var nav = $('#img-bottom')
-  $.each(links, function(j) {
+  $.each(links, function (j) {
     var i = $('<i/>')
       .addClass(links[j].icon)
-    var li = $('<div/>')
+    var li = $('<li/>')
     if ($(window).width() > 768) {
       li.addClass('blur-in')
     }
-    if(links[j].title !== 'email' && links[j].title !== 'cv') {
+    if (links[j].title !== 'email' && links[j].title !== 'cv') {
       li
         .attr('id', 'img-' + links[j].title)
         .html(i)
-      li.click(function() {
+      li.click(function () {
         loadPage(links[j].link);
       });
     } else {
-        if(links[j].title === 'email') {
-          var a = $('<a target="_blank"/>')
-            .attr('href', links[j].link)
-            .html(i)
-        } else {
-          var a = $('<a target="_blank"/>')
-            .attr('href', links[j].link)
-            .attr('download', 'CV Teodora Sandu')
-            .html(i)
-        }
-        li
-          .attr('id', 'img-' + links[j].title)
-          .html(a)
+      if (links[j].title === 'email') {
+        var a = $('<a target="_blank"/>')
+          .attr('href', links[j].link)
+          .html(i)
+      } else {
+        var a = $('<a target="_blank"/>')
+          .attr('href', links[j].link)
+          .attr('download', 'CV Teodora Sandu')
+          .html(i)
+      }
+      li
+        .attr('id', 'img-' + links[j].title)
+        .html(a)
     }
-  li.on('click mouseover', function() {
-    $(this).removeClass('blur-in')
-  })
-  li.
-    appendTo(nav)
-  li.hide()
-  setTimeout(function() {
-    li.show()
-  }, 1500)
+    li.on('click mouseover', function () {
+      $(this).removeClass('blur-in')
+    })
+    li.appendTo(nav)
+    if ($(window).width() > 768) {
+      li.hide()
+      setTimeout(function () {
+        li.show()
+      }, 1500)
+    }
   })
 }
