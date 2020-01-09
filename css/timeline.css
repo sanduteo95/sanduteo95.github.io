@@ -180,7 +180,10 @@
   #timeline::before {
     top: 3%;
     left: 21.5%;
-    height: 97%; } }
+    height: 97%; }
+
+  .date-timeline span {
+    font-size: .75em; } }
 @media screen and (max-width: 425px) {
   #timeline::before {
     top: 3%;
