@@ -5,22 +5,28 @@
   animation: none !important; }
 
 #title-skills {
+  position: relative;
+  display: inline-block;
   padding: 2em;
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: -1px 1px 0 #e5e6ec, -2px 2px 0 #8a94dc; }
+  margin-top: 5%;
+  float: left;
+  font-family: 'Montserrat', sans-serif; }
   #title-skills span {
-    position: relative;
-    top: 15px;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: .1ch;
-    line-height: 1;
     color: #424242; }
+    #title-skills span:before {
+      content: "";
+      position: absolute;
+      width: 20%;
+      background-color: #c9c5fd;
+      display: block;
+      height: .25em; }
 
 #skills {
   padding-top: 3rem;
-  width: 90%;
+  width: 100%;
   display: inline-block;
   height: 80%;
   padding-left: 0;
@@ -30,7 +36,6 @@
     margin: 2rem;
     width: 20vw;
     background-color: #FFF;
-    border-radius: 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     cursor: pointer; }
     #skills .skill-card:hover {
@@ -66,22 +71,27 @@
         transition: transform 0.5s, -webkit-transform 0.5s; }
     #skills .skill-card .skill-card__body {
       height: 40px;
-      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       transition: height 0.5s;
-      overflow: hidden; }
+      overflow: hidden;
+      background-color: #c9c5fd; }
       #skills .skill-card .skill-card__body .skill-card__title {
         margin: 0;
-        font-size: 1em;
+        font-size: 1.25em;
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
         color: #424242; }
       #skills .skill-card .skill-card__body .skill-card__duration {
-        color: #9E9E9E;
-        font-style: italic; }
+        color: white;
+        font-style: italic;
+        font-weight: bold; }
       #skills .skill-card .skill-card__body .skill-card__knowledge {
         text-align: left;
         margin-top: 10px;
-        color: #424242; }
+        color: #424242;
+        font-size: 1.5em;
+        list-style: none; }
       #skills .skill-card .skill-card__body .skill-card__knowledge li {
         margin-top: 0;
         transition-duration: 0;
@@ -114,15 +124,20 @@
         display: inline;
         text-align: left;
         transition: none;
-        margin-left: 10px; }
+        margin-left: 10px;
+        background-color: transparent; }
         #skills .skill-card .skill-card__body .skill-card__title {
           margin-bottom: 0;
           background-color: transparent;
           color: #424242;
           box-shadow: none;
           text-align: center; }
+        #skills .skill-card .skill-card__body .skill-card__duration {
+          color: #8f8f8f; }
         #skills .skill-card .skill-card__body .skill-card__knowledge {
-          display: block; }
+          display: block;
+          padding-left: 5.5rem;
+          font-size: 1.25em; }
           #skills .skill-card .skill-card__body .skill-card__knowledge li {
             margin: 0;
             transform: none;
