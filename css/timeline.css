@@ -42,14 +42,13 @@
     font-weight: bold;
     font-size: 3em;
     color: #424242; }
-  #title-timeline:before {
-    content: "";
-    position: absolute;
-    width: 20%;
-    background-color: #c9c5fd;
-    display: block;
-    height: 10px;
-    top: 1.5rem; }
+    #title-timeline span:before {
+      content: "";
+      position: absolute;
+      width: 20%;
+      background-color: #c9c5fd;
+      display: block;
+      height: .25em; }
 
 .date-timeline {
   position: absolute;

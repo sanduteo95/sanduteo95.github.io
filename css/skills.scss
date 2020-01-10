@@ -120,6 +120,7 @@
             }
 
             .skill-card__knowledge li {
+                font-weight: bold;
                 margin-top: 0;
                 transition-duration: 0;
                 transition-delay: 0.5s;
@@ -136,51 +137,50 @@
         padding-bottom: 5rem;
 
         .skill-card {
-            display: inline-table;
+            display: inline-flex;
             margin: .5rem;
             margin-bottom: 1rem;
             width: 40vw;
-            height: 100px;
+            height: 135px;
             
             .skill-card__header {
-                float: left;
                 left: 10px;
-                margin-top: 10px;
                 transition: none;
-                vertical-align:top;
-                height: 30px;
-                width: 30px;
+                height: 50px;
+                width: 50px;
 
-                img {
-                    object-fit: contain;
-                    width: 30px !important;
-                    height: 30px !important;
+                .skill-card__icon {
+                    width: 100%;
+                    height: auto;
                 }
             }
 
             .skill-card__body {
-                display: inline;
-                text-align: left;
                 transition: none;
-                margin-left: 10px;
                 background-color: transparent;
+                height: fit-content;
 
                 .skill-card__title {
                     margin-bottom: 0;
                     background-color: transparent;
                     color: $dark;
                     box-shadow: none;
-                    text-align: center;
+                    text-align: left;
+                    padding-left: 2em;
                 }
 
                 .skill-card__duration {
-                    color: lighten($dark, 30%);
+                    color: lighten($dark, 40%);
+                    float: left;
+                    padding-left: 2.5em;
                 }
 
                 .skill-card__knowledge {
-                    display: block;
-                    padding-left: 5.5rem;
+                    display: inline-table;
                     font-size: 1.25em;
+                    float: left;
+                    padding-left: 2em;
+                    list-style: circle;
 
                     li {
                         margin: 0;

@@ -47,18 +47,16 @@
 		font-weight: bold;
 		font-size: 3*$title_font/4;
         color: $dark;
-    }
-    
-    &:before{
-        content: "";
-        position: absolute;
-        width: 20%;
-        background-color: $light_accent;
-        display: block;
-        height: 10px;
-        top: 1.5rem;
-    }
-     
+
+        &:before{
+            content: "";
+            position: absolute;
+            width: 20%;
+            background-color: $light_accent;
+            display: block;
+            height: .25em;
+        }
+    }     
 }
 
 .date-timeline {
