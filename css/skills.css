@@ -93,7 +93,6 @@
         font-size: 1.5em;
         list-style: none; }
       #skills .skill-card .skill-card__body .skill-card__knowledge li {
-        font-weight: bold;
         margin-top: 0;
         transition-duration: 0;
         transition-delay: 0.5s;
@@ -136,8 +135,7 @@
           display: inline-table;
           font-size: 1.25em;
           float: left;
-          padding-left: 2em;
-          list-style: circle; }
+          padding-left: 2em; }
           #skills .skill-card .skill-card__body .skill-card__knowledge li {
             margin: 0;
             transform: none;
