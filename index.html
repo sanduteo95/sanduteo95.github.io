@@ -27,6 +27,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 	<link rel="stylesheet" type="text/css" href="css/skills.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 
 <body>
@@ -44,18 +45,105 @@
 			<p class="row blur-in" id="more-info">
 				IBM Software Enginner and  MSci Computer Science Graduate from University of Birmingham.
 			</p>
-
-			<img class="row blur-in down-arrow" id="down-arrow-top" src="img/chevron.png" />
 		</div>
+		<img class="row img-pop-up down-arrow" id="down-arrow" src="img/chevron.png" />
 	</section>
 
 	<section id="second-page">
-		<div id="title-skills">
-			<span class="title"> SKILLS </span>
+		<div class="title" id="title-about">
+			<span> ABOUT ME </span>
+		</div>
+
+		<div id="about">
+			A self-driven and ambitious graduate, able to adapt to various situations and deliver under high pressure. Full of initiative and always looking to cultivate new skills, I am open to new opportunities and aspire to make a significant contribution and collaborate with other people who are passionate about their work. 
+		</div>
+	</section>
+
+	<section id="third-page">
+		<div class="title" id="title-skills">
+			<span> SKILLS </span>
 		</div>
 
 		<div id="skills">
 			<div class="skill-card">
+				<header class="skill-card__header"><img class="skill-card__icon" src="img/react.png" alt="React Logo"/></header>
+				<section class="skill-card__body">
+				<h2 class="skill-card__title">Front-end</h2><span class="skill-card__duration">5 years experience</span>
+				<ul class="skill-card__knowledge">
+					<li>React</li>
+					<li>AngularJS</li>
+					<li>Webpack</li>
+					<li>Sass</li>
+				</ul>
+				</section>
+			</div>
+			<div class="skill-card">
+				<header class="skill-card__header"><img class="skill-card__icon" src="img/nodejs.png" alt="Node.js Logo"/></header>
+				<section class="skill-card__body">
+				<h2 class="skill-card__title">Back-end</h2><span class="skill-card__duration">5 years experience</span>
+				<ul class="skill-card__knowledge">
+					<li>Node.js</li>
+					<li>Java</li>
+					<li>REST</li>
+					<li>SQL</li>
+				</ul>
+				</section>
+			</div>
+			<div class="skill-card">
+				<header class="skill-card__header"><img class="skill-card__icon" src="img/cypress.jpg" alt="Cypress Logo"/></header>
+				<section class="skill-card__body">
+				<h2 class="skill-card__title">Tests</h2><span class="skill-card__duration">3 years experience</span>
+				<ul class="skill-card__knowledge">
+					<li>TDD:
+						<ul class="skill-card__knowledge-list">
+							<li>Mocha.js/Jest</li>
+							<li>jUnit</li>
+						</ul>
+					</li>
+					<li>BDD:
+						<ul class="skill-card__knowledge-list">
+							<li>Cypress.io/Protractor</li>
+							<li>Selenium</li>
+						</ul class="skill-card__knowledge-list">
+					</li>
+				</ul>
+				</section>
+			</div>
+			<div class="skill-card">
+				<header class="skill-card__header"><img class="skill-card__icon" src="img/kubernetes.png" alt="Kubernetes Logo"/></header>
+				<section class="skill-card__body">
+				<h2 class="skill-card__title">Containers</h2><span class="skill-card__duration">1 year experience</span>
+				<ul class="skill-card__knowledge">
+					<li>Kubernetes</li>
+					<li>Docker</li>
+					<li>Helm</li>
+				</ul>
+				</section>
+			</div>
+			<div class="skill-card">
+				<header class="skill-card__header"><img class="skill-card__icon" src="img/prometheus.png" alt="Prometheus Logo"/></header>
+				<section class="skill-card__body">
+				<h2 class="skill-card__title">Monitoring</h2><span class="skill-card__duration">1 year experience</span>
+				<ul class="skill-card__knowledge">
+					<li>Prometheus</li>
+					<li>Grafana</li>
+					<li>Kibana</li>
+				</ul>
+				</section>
+			</div>
+			<div class="skill-card">
+				<header class="skill-card__header"><img class="skill-card__icon" src="img/jenkins.png" alt="Jenkins Logo"/></header>
+				<section class="skill-card__body">
+				<h2 class="skill-card__title">CI/CD</h2><span class="skill-card__duration">1 year experience</span>
+				<ul class="skill-card__knowledge">
+					<li>GitHub</li>
+					<li>Jenkins</li>
+					<li>Travis</li>
+					<li>SonarQube</li>
+				</ul>
+				</section>
+			</div>
+			<!-- <div class="skill-card">
 				<header class="skill-card__header"><img class="skill-card__icon" src="img/react.png" alt="React Logo"/></header>
 				<section class="skill-card__body">
 				<h2 class="skill-card__title">React</h2><span class="skill-card__duration">3 years experience</span>
@@ -71,7 +159,7 @@
 			<div class="skill-card">
 				<header class="skill-card__header"><img class="skill-card__icon" src="img/angular.png" alt="AngularJS Logo"/></header>
 				<section class="skill-card__body">
-				<h2 class="skill-card__title">AngularJS</h2><span class="skill-card__duration">4 year experience</span>
+				<h2 class="skill-card__title">AngularJS</h2><span class="skill-card__duration">4 years experience</span>
 				<ul class="skill-card__knowledge">
 					<li>Jasmine</li>
 					<li>Karma</li>
@@ -87,21 +175,8 @@
 				<ul class="skill-card__knowledge">
 					<li>Express.js</li>
 					<li>Mocha.js</li>
-					<li>Chai & Sinon.JS</li>
+					<li>Chai & Sinon.js</li>
 					<li>Webpack</li>
-				</ul>
-				</section>
-			</div>
-
-			<div class="skill-card">
-				<header class="skill-card__header"><img class="skill-card__icon" src="img/css_and_html.png" alt="CSS&HTML Logo"/></header>
-				<section class="skill-card__body">
-				<h2 class="skill-card__title">CSS & HTML</h2><span class="skill-card__duration">5 years experience</span>
-				<ul class="skill-card__knowledge">
-					<li>HTML5</li>
-					<li>Bootstrap & Material-UI</li>
-					<li>Sass</li>
-					<li>Less</li>
 				</ul>
 				</section>
 			</div>
@@ -109,7 +184,7 @@
 			<div class="skill-card">
 				<header class="skill-card__header"><img class="skill-card__icon" src="img/containerisation.png" alt="Containerisation Logo"/></header>
 				<section class="skill-card__body">
-				<h2 class="skill-card__title">Container Orchestration</h2><span class="skill-card__duration">1 year experience</span>
+				<h2 class="skill-card__title">Containerisation</h2><span class="skill-card__duration">1 year experience</span>
 				<ul class="skill-card__knowledge">
 					<li>Helm</li>
 					<li>Kubernetes</li>
@@ -125,6 +200,7 @@
 				<ul class="skill-card__knowledge">
 					<li>Prometheus</li>
 					<li>Grafana</li>
+					<li>Kibana</li>
 				</ul>
 				</section>
 			</div>
@@ -139,7 +215,7 @@
 					<li>GitHub</li>
 				</ul>
 				</section>
-			</div>
+			</div> -->
 
 			<!-- <div class="skill-card">
 				<header class="skill-card__header"><img class="skill-card__icon" src="img/fp.png" alt="Functional Programming Logo"/></header>
@@ -153,13 +229,11 @@
 				</section>
 			</div> -->
 		</div>
-
-		<!-- <img class="row blur-in down-arrow" id="down-arrow-skills" src="img/chevron.png" /> -->
 	</section>
 
-	<section id="third-page">
-		<div id="title-timeline">
-			<span class="title"> EXPERIENCE </span>
+	<section id="fourth-page">
+		<div class="title" id="title-timeline">
+			<span> EXPERIENCE </span>
 		</div>
 
 		<div id="timeline"></div>

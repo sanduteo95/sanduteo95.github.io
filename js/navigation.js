@@ -2,16 +2,10 @@ $(function () {
   "use strict";
   loadNavigation()
 
-  $('#down-arrow-top').click(function () {
+  $('#down-arrow').click(function () {
     $('html, body').animate({
       scrollTop: $('#second-page').offset().top
-    }, 2000)
-  });
-
-  $('#down-arrow-skills').click(function () {
-    $('html, body').animate({
-      scrollTop: $('#third-page').offset().top
-    }, 2000)
+    }, 1000)
   });
 
   $(window).resize(function () {

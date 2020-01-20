@@ -4,19 +4,20 @@
 	float: left;
 	clear: left;
   	position: relative;
-	padding: 2rem;
+    padding: 2rem;
+    padding-top: 0;
 	margin-bottom: 0;
     margin-top: 0;
-    background-color: $dark_accent;
+    background-color: $light;
 
 	&::before {
 		content: '';
 		position: absolute;
-		top: 2%;
+		top: 1%;
 		left: 50%;
-		height: 98%;
+		height: 99%;
 		width: 0.25em;
-		background-color: $light_accent;
+		background-color: $dark_accent;
 	}
 }
 
@@ -36,25 +37,14 @@
 }
 
 #title-timeline {
-    position: relative;
-	display: inline-block;
-    margin-top: 5%;
-	padding: 2em;
-	text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    float: none;
 
 	span {
-		font-weight: bold;
-		font-size: 3*$title_font/4;
-        color: $dark;
-
         &:before{
-            content: "";
-            position: absolute;
-            width: 20%;
-            background-color: $light_accent;
+            width: 30px;
             display: block;
-            height: .25em;
+            height: .3em;
         }
     }     
 }
@@ -69,7 +59,7 @@
 	height: $date_size;
 	border-radius: 50%;
 	background-color: white;
-	box-shadow: 0 0 0 0.25em $light_accent, inset 0 0.12em 0 rgba(#000, .08), 0 0.2em 0 0.25em rgba(#000, .05) ;
+	box-shadow: 0 0 0 0.25em $dark_accent, inset 0 0.12em 0 rgba(#000, .08), 0 0.2em 0 0.25em rgba(#000, .05) ;
 	// horizontal alignment
 	text-align: center;
 
@@ -114,7 +104,7 @@
 		height: 0;
 		width: 0;
 		border: 0.45em solid transparent;
-		border-left: 0.45em solid $light_accent;
+		border-left: 0.45em solid $dark_accent;
 	}
 
 	.block-timeline:nth-child(even) & {
@@ -130,7 +120,7 @@
 			width: 0em;
 			height: 0em;
 			border-color: transparent;
-			border-right-color: $light_accent;
+			border-right-color: $dark_accent;
 		}
 
     #section-timeline {
@@ -171,7 +161,7 @@
 #section-timeline {
     width: 100%;
     margin-top: 0;
-    background: $light_accent;
+    background: $dark_accent;
     padding-top: 1em;
     text-align: right;
     padding-bottom: 1em;
@@ -194,7 +184,7 @@
 
 @media screen and (max-width: 768px) {
     .content-timeline {
-        width: 60%;
+        width: 65%;
         margin-left: 0;
         margin-right: $date_size/2;
 
@@ -209,7 +199,7 @@
                 width: 0em;
                 height: 0em;
                 border-color: transparent;
-                border-right-color: $light_accent;
+                border-right-color: $dark_accent;
             }
 
             #section-timeline {
@@ -231,9 +221,7 @@
 
     #timeline {
         &::before {
-            top: 2%;
             left: 19.9%;
-            height: 98%;
         }
     }
 }
@@ -241,9 +229,7 @@
 @media screen and (max-width: 475px) {
     #timeline {
         &::before {
-            top: 3%;
             left: 21.5%;
-            height: 97%;
         }
     }
 
@@ -257,9 +243,7 @@
 @media screen and (max-width: 425px) {
     #timeline {
         &::before {
-            top: 3%;
             left: 22%;
-            height: 97%;
             width: 0.25em;
         }
     }
@@ -285,9 +269,7 @@
 
     #timeline {
         &::before {
-            top: 3%;
             left: 22.6%;
-            height: 97%;
         }
     }
 }
@@ -295,9 +277,7 @@
 @media screen and (max-width: 320px) {
     #timeline {
         &::before {
-            top: 3%;
             left: 23.5%;
-            height: 97%;
         }
     }
 }

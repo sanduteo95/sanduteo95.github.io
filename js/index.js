@@ -21,7 +21,7 @@ $(function() {
     $('li').map(function() {
         $(this).removeClass('blur-in')
     })
-    $('#down-arrow-top').removeClass('blur-in')
+    $('#down-arrow').removeClass('img-pop-up')
 
     $('#img-linkedin').removeClass('blur-in')
     $('#img-github').removeClass('blur-in')
@@ -31,13 +31,12 @@ $(function() {
   } else {
     $('#header').hide()
     $('#more-info').hide()
-    $('#down-arrow-top').hide()
 
     setTimeout(function() {
       $('#header').show()
       $('#img-middle').removeClass('img-pop-up')
       $('#more-info').show()
-      $('#down-arrow-top').show()
+      $('#down-arrow').removeClass('img-pop-up')
     }, 1500)
   }
 

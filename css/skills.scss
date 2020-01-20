@@ -1,34 +1,20 @@
 @import 'variables';
 @import 'functions';
 
+$time: 0.5s;
 
 #title-skills {
-    position: relative;
-    display: inline-block;
-    padding: 2em;
-    margin-top: 5%;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-
     span {
-        font-weight: bold;
-        font-size: 3*$title_font/4;
         text-transform: uppercase;
-        color: $dark;
 
         &:before{
-            content: "";
-            position: absolute;
-            width: 20%;
-            background-color: $light_accent;
-            display: block;
-            height: .25em;
-         }
+            width: 29px;
+            height: .27em;
+        }
     }
 }
 
 #skills {    
-    padding-top: 3rem;
     width: 100%;
     display: inline-block;
     height: 80%;
@@ -39,6 +25,7 @@
         display: inline-block;
         margin: 2rem;
         width: 20vw;
+        height: 270px;
         background-color: #FFF;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         cursor: pointer;
@@ -47,7 +34,7 @@
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
             .skill-card__header {
-                height: 40px;
+                height: 60px;
 
                 .skill-card__icon {
                     -webkit-transform: translateX(-50%) translateY(-50%) scale(3);
@@ -62,17 +49,21 @@
                     -webkit-transform: translateX(0);
                     transform: translateX(0);
                     transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
-                    transition-duration: 0.5s;
+                    transition-duration: $time;
+
+                    .skill-card__knowledge-list {
+                        margin: 0;
+                        padding-left: 1em;
+                        list-style: none;
+                    }
                 }
             }
         }
 
         .skill-card__header {
-            border-top-right-radius: 15px;
-            border-top-left-radius: 15px;
             position: relative;
-            height: 170px;
-            transition: height 0.5s;
+            height: 190px;
+            transition: height $time;
             overflow: hidden;
 
             .skill-card__icon {
@@ -84,7 +75,7 @@
                 display: block;
                 width: 128px;
                 height: 128px;
-                transition: transform 0.5s, -webkit-transform 0.5s;
+                transition: transform $time, -webkit-transform $time;
             }
         }
 
@@ -92,9 +83,8 @@
             height: 40px;
             padding-top: 10px;
             padding-bottom: 10px;
-            transition: height 0.5s;
+            transition: height $time;
             overflow: hidden;
-            background-color: $light_accent;
 
             .skill-card__title {
                 margin: 0;
@@ -102,11 +92,11 @@
                 text-transform: uppercase;
 
                 font-family: 'Montserrat', sans-serif;
-                color: $dark;
+                color: $dark_accent;
             }
 
             .skill-card__duration {
-                color: white;
+                color: $dark;
                 font-style: italic;
                 font-weight: bold;
             }
@@ -115,14 +105,14 @@
                 text-align: left;
                 margin-top: 10px;
                 color: $dark;
-                font-size: 1.5em;
+                font-size: 1.15em;
                 list-style: none;
             }
 
             .skill-card__knowledge li {
                 margin-top: 0;
                 transition-duration: 0;
-                transition-delay: 0.5s;
+                transition-delay: $time;
                 -webkit-transform: translateX(-100%);
                 transform: translateX(-100%);
             }
@@ -133,17 +123,15 @@
 //media queries
 @media screen and (max-width: 475px) {
     #skills {
-        padding-bottom: 5rem;
-
         .skill-card {
             display: inline-flex;
             margin: .5rem;
             margin-bottom: 1rem;
-            width: 40vw;
+            width: 41vw;
             height: 135px;
             
             .skill-card__header {
-                left: 10px;
+                left: 5px;
                 transition: none;
                 height: 50px;
                 width: 50px;
@@ -165,13 +153,15 @@
                     color: $dark;
                     box-shadow: none;
                     text-align: left;
-                    padding-left: 2em;
+                    padding-left: 1em;
                 }
 
                 .skill-card__duration {
                     color: lighten($dark, 40%);
+                    padding-left: 1.5em;
+                    width: 100%;
+                    text-align: left;
                     float: left;
-                    padding-left: 2.5em;
                 }
 
                 .skill-card__knowledge {
@@ -185,9 +175,28 @@
                         transform: none;
                         -webkit-transform: none;
                         transition: none;
+                        position: relative;
+                        // height: 25px;
+
+                        .skill-card__knowledge-list {
+                            position: absolute;
+                            top: 0;
+                            margin: 0;
+                            // margin-top: -12px;
+                            padding-left: 2em;
+                            list-style: none;
+                        }
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #skills {
+        .skill-card {
+            height: 100px;
         }
     }
 }
