@@ -80,7 +80,7 @@
 	visibility: inherit;
 	position: relative;
 	margin-top: $date_size/2;
-    margin-left: $date_size/2;
+    margin-left: $date_size/4;
 	width: 40%;
 	background-color: $box_color;
 	box-shadow: 0 0.2em 0 darken($box_color, 10%);
@@ -110,7 +110,7 @@
 	.block-timeline:nth-child(even) & {
 		float: right;
         margin-left: 0;
-        margin-right: $date_size/2;
+        margin-right: $date_size/4;
 
 		&::before {
 			content: '';

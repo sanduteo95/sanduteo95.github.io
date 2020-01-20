@@ -64,7 +64,7 @@
   visibility: inherit;
   position: relative;
   margin-top: 3em;
-  margin-left: 3em;
+  margin-left: 1.5em;
   width: 40%;
   background-color: white;
   box-shadow: 0 0.2em 0 #e6e6e6; }
@@ -87,7 +87,7 @@
   .block-timeline:nth-child(even) .content-timeline {
     float: right;
     margin-left: 0;
-    margin-right: 3em; }
+    margin-right: 1.5em; }
     .block-timeline:nth-child(even) .content-timeline::before {
       content: '';
       top: 3em;
