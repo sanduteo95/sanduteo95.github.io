@@ -128,10 +128,11 @@
           transform: none;
           -webkit-transform: none;
           transition: none;
-          position: relative; }
+          position: relative;
+          top: -.75rem; }
           #skills .skill-card .skill-card__body .skill-card__knowledge li .skill-card__knowledge-list {
-            position: absolute;
-            top: 0;
+            position: relative;
+            top: -.1rem;
             margin: 0;
             padding-left: 2em;
             list-style: none; } }
