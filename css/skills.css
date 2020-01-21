@@ -160,7 +160,7 @@
       transition: none;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); } }
-@media screen and (max-width: 375px), (max-device-width: 375px) {
+@media screen and (max-width: 475px), (max-device-width: 475px) {
   #skills .skill-card {
     width: 70vw;
     height: fit-content; } }
