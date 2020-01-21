@@ -171,8 +171,19 @@
   #timeline::before {
     left: 21.5%; }
 
-  .date-timeline span {
-    font-size: .75em; } }
+  #section-timeline {
+    font-size: 1.5em; }
+
+  .description-timeline {
+    font-size: 1.5em; }
+
+  .content-timeline {
+    margin-top: 4em; }
+
+  .date-timeline {
+    font-size: 1.25em; }
+    .date-timeline span {
+      font-size: 1.15em; } }
 @media screen and (max-width: 425px) {
   #timeline::before {
     left: 17%;

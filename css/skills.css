@@ -106,7 +106,7 @@
     -webkit-text-size-adjust: none; }
 
   #skills .pill {
-    font-size: 1rem; }
+    font-size: .9rem; }
   #skills .skill-card {
     display: inline-flex;
     margin: .5rem;
@@ -134,16 +134,16 @@
         box-shadow: none;
         text-align: left;
         padding-left: 1em;
-        font-size: 1.35rem; }
+        font-size: 1.15rem; }
       #skills .skill-card .skill-card__body .skill-card__duration {
         color: #a8a8a8;
-        padding-left: 1.5em;
+        padding-left: 1.25em;
         width: 100%;
         text-align: left;
         float: left;
-        font-size: 1rem; }
+        font-size: .95rem; }
       #skills .skill-card .skill-card__body .skill-card__knowledge {
-        font-size: 1em;
+        font-size: .75em;
         float: left;
         padding-left: 0em;
         text-align: left; }
