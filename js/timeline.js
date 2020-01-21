@@ -52,7 +52,7 @@ function loadTimeline() {
   var experiences = [
     {
       title: 'IBM SOFTWARE ENGINEER',
-      date: 'Sep \'19',
+      date: 'Sep \'19 - Now',
       icon: 'briefcase',
       description: 'Subsequently to finishing my placement year at IBM in 2018, I was offered the chance to return to my team as a graduate.'
     },
@@ -70,7 +70,7 @@ function loadTimeline() {
     },
     {
       title: 'IBM SOFTWARE ENGINEER',
-      date: 'Jul \'17 - Jul \'18',
+      date: 'Jul \'17 - \'18',
       icon: 'briefcase',
       description: 'Part of the Hybrid Integration department, I worked as a full-stack developer on a cloud product built on top of a micro-service architecture.  Collaborating with a variety of developers, architects, and designers, I contributed to implementing numerous aspects of the user-interface using AngularJS, React, HTML and Sass, and got involved in developing the persistence and API layers of various micro-services in Node.js. Being part of a department that practiced agile and DevOps, I was required to use a variety of tools to benefit our continuous delivery strategies, such as Jenkins, Travis, Artifactory and GitHub.  As a result of my skills I took on the role as the squad\'s leading front-end developer and was part of a group who started a side-project focused on improving the front-end.'
     }, {
