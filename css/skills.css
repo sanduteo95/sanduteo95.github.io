@@ -102,7 +102,10 @@
 @media screen and (max-width: 1200px) {
   #skills .skill-card {
     width: 35vw; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (max-device-width: 768px) {
+  body {
+    -webkit-text-size-adjust: none; }
+
   #skills .pill {
     font-size: 1rem; }
   #skills .skill-card {
@@ -157,8 +160,9 @@
       transition: none;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); } }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px), (max-device-width: 375px) {
   #skills .skill-card {
-    height: 100px; } }
+    width: 70vw;
+    height: fit-content; } }
 
 /*# sourceMappingURL=skills.css.map */
