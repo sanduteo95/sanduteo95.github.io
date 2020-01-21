@@ -183,10 +183,18 @@
 //media queries
 
 @media screen and (max-width: 768px) {
+    #timeline {
+        padding: 0;
+
+        &::before {
+            left: 17.4%;
+        }
+    }
+
     .content-timeline {
         width: 65%;
         margin-left: 0;
-        margin-right: $date_size/2;
+        margin-right: $date_size/4;
 
         .block-timeline:nth-child(odd) & {
             float: right;
@@ -218,12 +226,6 @@
         left: 17.5%;
         color: $dark;
     }
-
-    #timeline {
-        &::before {
-            left: 19.9%;
-        }
-    }
 }
 
 @media screen and (max-width: 475px) {
@@ -243,7 +245,7 @@
 @media screen and (max-width: 425px) {
     #timeline {
         &::before {
-            left: 22%;
+            left: 17%;
             width: 0.25em;
         }
     }
@@ -269,15 +271,24 @@
 
     #timeline {
         &::before {
-            left: 22.6%;
+            left: 17%;
         }
     }
 }
 
+@media screen and (max-width: 360px) {
+    #timeline {
+        &::before {
+            left: 17.5%;
+        }
+    }
+}
+
+
 @media screen and (max-width: 320px) {
     #timeline {
         &::before {
-            left: 23.5%;
+            left: 17.5%;
         }
     }
 }
