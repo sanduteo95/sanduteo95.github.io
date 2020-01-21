@@ -9,7 +9,9 @@
   background-color: #c9c5fd;
   border: none;
   color: #424242;
-  padding: 5px 5px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -33,7 +35,7 @@
   #skills .skill-card {
     display: inline-block;
     margin: 2rem;
-    width: 20vw;
+    width: 25vw;
     height: 270px;
     background-color: #FFF;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -81,8 +83,7 @@
         margin: 0;
         font-size: 1.25em;
         text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        color: #8a94dc; }
+        font-family: 'Montserrat', sans-serif; }
       #skills .skill-card .skill-card__body .skill-card__duration {
         color: #a8a8a8;
         font-style: italic;
@@ -98,20 +99,25 @@
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%); }
 
+@media screen and (max-width: 1200px) {
+  #skills .skill-card {
+    width: 35vw; } }
 @media screen and (max-width: 768px) {
+  #skills .pill {
+    font-size: 1rem; }
   #skills .skill-card {
     display: inline-flex;
     margin: .5rem;
     margin-bottom: 1rem;
     width: 41vw;
-    height: 155px; }
+    height: 180px; }
     #skills .skill-card .skill-card__header {
       left: 5px;
       transition: none;
-      height: 50px;
-      width: 50px; }
+      height: 60px;
+      width: 60px; }
       #skills .skill-card .skill-card__header .skill-card__icon {
-        width: 100%;
+        width: 40px;
         height: auto;
         transition: none; }
     #skills .skill-card .skill-card__body {
@@ -132,12 +138,12 @@
         text-align: left;
         float: left; }
       #skills .skill-card .skill-card__body .skill-card__knowledge {
-        display: inline-table;
         font-size: 1.25em;
         float: left;
-        padding-left: 0em; }
+        padding-left: 0em;
+        text-align: left; }
         #skills .skill-card .skill-card__body .skill-card__knowledge li {
-          margin: 1px;
+          margin: 2px;
           transform: none;
           -webkit-transform: none;
           transition: none;

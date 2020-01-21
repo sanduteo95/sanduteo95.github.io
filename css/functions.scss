@@ -1,5 +1,5 @@
 @mixin resizable_elem($width) {
-  width: calc(#{$width});
+	width: calc(#{$width});
 }
 
 @mixin border_radius() {
@@ -12,8 +12,8 @@
 
 @mixin animation($animation) {
 	-webkit-animation: $animation;
-    -moz-animation: $animation;
-    -o-animation: $animation;
-    -ms-transition: $animation;
+	-moz-animation: $animation;
+	-o-animation: $animation;
+	-ms-transition: $animation;
 	animation: $animation;
 }
