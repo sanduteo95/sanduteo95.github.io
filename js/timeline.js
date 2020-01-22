@@ -52,7 +52,7 @@ function loadTimeline() {
   var experiences = [
     {
       title: 'IBM SOFTWARE ENGINEER',
-      date: 'Sep \'19 - Now',
+      date: 'Sep \'19',
       icon: 'briefcase',
       description: 'Subsequently to finishing my placement year at IBM in 2018, I was offered the chance to return to my team as a graduate.'
     },
