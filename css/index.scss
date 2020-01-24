@@ -241,10 +241,6 @@ a {
 	#more-info {
 		font-size: $big_font;
 	}
-
-	body {
-		position:fixed; // for whole width
-	}
 }
 
 @media screen and (max-device-width: 480px) {

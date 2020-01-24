@@ -211,10 +211,7 @@ a {
 @media screen and (max-device-width: 768px) {
   #info,
   #more-info {
-    font-size: 1.75em; }
-
-  body {
-    position: fixed; } }
+    font-size: 1.75em; } }
 @media screen and (max-device-width: 480px) {
   body {
     -webkit-text-size-adjust: none; } }
