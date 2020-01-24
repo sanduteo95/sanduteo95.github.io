@@ -1,8 +1,10 @@
+@import 'variables';
+
 #about {
     width: 90%;
     display: inline-block;
     padding: 2em;
-    font-size: 1.5em;
+    font-size: $medium_font;
 }
 
 .title {
@@ -15,6 +17,6 @@
 }
 @media screen and (max-width: 768px), (max-device-width: 768px) {
     #about {
-        font-size: 1.75em;
+        font-size: $big_font;
     }
 }

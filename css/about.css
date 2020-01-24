@@ -1,3 +1,9 @@
+.notransition {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  animation: none !important; }
+
 #about {
   width: 90%;
   display: inline-block;

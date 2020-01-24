@@ -133,21 +133,20 @@ a {
   border-bottom-right-radius: 50% 50%;
   border-radius: 50%;
   list-style: none; }
-
-#img-bottom i {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 1.5em;
-  margin: -0.5em;
-  color: #424242;
-  border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-radius: 50%;
-  cursor: pointer; }
+  #img-bottom i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5em;
+    margin: -0.5em;
+    color: #424242;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-radius: 50%;
+    cursor: pointer; }
 
 .blur-in {
   -webkit-animation: blur-in 2s 1;
@@ -157,10 +156,9 @@ a {
   animation: blur-in 2s 1; }
 
 #more-info {
-  display: inline-block;
   color: black;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 500;
   margin-top: 1em;
   margin-bottom: 0; }

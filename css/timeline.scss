@@ -175,7 +175,7 @@
 
 .description-timeline {
     display: inline-block;
-    font-size: 1.25em;
+    font-size: $small_font;
     margin: 1em;
     line-height: 1.6;
 }
@@ -236,11 +236,11 @@
     }
 
     #section-timeline {
-        font-size: 1.5em;
+        font-size: $big_font;
     }
 
     .description-timeline {
-        font-size: 1.5em;
+        font-size: $medium_font;
     }
 
     .content-timeline {
@@ -249,10 +249,6 @@
 
     .date-timeline {
         font-size: 1.35em;
-
-        span {
-            font-size: 1.05em;
-        }
     }
 }
 

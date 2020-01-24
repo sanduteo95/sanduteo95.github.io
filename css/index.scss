@@ -139,20 +139,20 @@ a {
 	margin: 0;
 	@include border_radius();
 	list-style: none;
-}
 
-#img-bottom i {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	font-size: $icon_font;
-	margin: -$icon_font/3;
+	i {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: $icon_font;
+		margin: -$icon_font/3;
 
-	color: $dark;
+		color: $dark;
 
-	@include border_radius();
-	cursor: pointer;
+		@include border_radius();
+		cursor: pointer;
+	}
 }
 
 .blur-in {
@@ -160,10 +160,9 @@ a {
 }
 
 #more-info {
-	display: inline-block;
 	color: black;
 	text-decoration: none;
-	font-size: 1.25em;
+	font-size: $medium_font;
 	font-weight: 500;
 	margin-top: 1em;
 	margin-bottom: 0;
