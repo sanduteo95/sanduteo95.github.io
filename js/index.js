@@ -30,11 +30,13 @@ $(function() {
 
   } else {
     $('#header').hide()
+    $('#info').hide()
     $('#more-info').hide()
 
     setTimeout(function() {
       $('#header').show()
       $('#img-middle').removeClass('img-pop-up')
+      $('#info').show()
       $('#more-info').show()
       $('#down-arrow').removeClass('img-pop-up')
     }, 1500)
