@@ -8,7 +8,6 @@
   float: left;
   clear: left;
   position: relative;
-  padding: 2rem;
   padding-top: 0;
   margin-bottom: 0;
   margin-top: 0;
@@ -70,7 +69,7 @@
   box-shadow: 0 0.2em 0 #e6e6e6; }
   .content-timeline h2 {
     font-family: 'Montserrat', sans-serif;
-    color: #424242; }
+    color: #0f0f0f; }
   .content-timeline .right-icon,
   .content-timeline .left-icon {
     color: white !important;
@@ -121,6 +120,7 @@
 #section-timeline {
   width: 100%;
   margin-top: 0;
+  margin-bottom: 0;
   background: #8a94dc;
   padding-top: 1em;
   text-align: right;

@@ -50,7 +50,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
   .title span {
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.625em;
     color: #424242; }
     .title span:before {
       content: "";
@@ -66,23 +66,25 @@ a {
   vertical-align: middle;
   text-align: center; }
 
-.row {
+.myRow {
   margin-top: 0.65em;
   position: relative;
   margin-bottom: 0.65em; }
 
 #header {
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 4em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5em;
   font-weight: bold;
   letter-spacing: -0.01em;
   line-height: 1;
-  margin-top: -0.65em; }
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #424242;
+  padding-bottom: .5em; }
 
 .drip {
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: -1px 1px 0 #e5e6ec, -2px 2px 0 #8a94dc;
+  text-shadow: -1px 1px 0 #e5e6ec, 1px -1px 0 #8a94dc;
   color: #424242; }
 
 #nav {
@@ -155,19 +157,24 @@ a {
   -ms-transition: blur-in 2s 1;
   animation: blur-in 2s 1; }
 
+#info,
 #more-info {
-  color: black;
+  color: #424242;
   text-decoration: none;
-  font-size: 1.5em;
-  font-weight: 500;
-  margin-top: 1em;
+  font-size: 1.25em;
   margin-bottom: 0; }
+
+#info {
+  font-weight: bold; }
+
+#more-info {
+  margin-top: 0; }
 
 .down-arrow {
   display: block;
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: -1em;
   width: 3em;
   height: 3em;
   margin-left: -1.5em;
@@ -198,6 +205,10 @@ a {
   100% {
     display: block;
     opacity: 1; } }
+@media screen and (max-device-width: 768px) {
+  #info,
+  #more-info {
+    font-size: 1.75em; } }
 @media screen and (max-device-width: 480px) {
   body {
     -webkit-text-size-adjust: none; } }
