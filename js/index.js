@@ -17,6 +17,7 @@ $(function() {
   if ($(window).width() <= 768) {
     $('#img-middle').removeClass('img-pop-up')
     $('#header').addClass('notransition')
+    $('#info').removeClass('blur-in')
     $('#more-info').removeClass('blur-in')
     $('li').map(function() {
         $(this).removeClass('blur-in')
