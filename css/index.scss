@@ -3,20 +3,20 @@
 
 html {
 	font: $normal_font $font;
-	margin:0;
-	padding:0;
-	width:100%;
-	height:100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 	overflow: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
-	margin:0;
-	padding:0;
-	width:100%;
-	height:100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
 	background: $background;
 }
 
@@ -240,6 +240,10 @@ a {
 	#info, 
 	#more-info {
 		font-size: $big_font;
+	}
+
+	body {
+		position:fixed; // for whole width
 	}
 }
 
