@@ -64,7 +64,8 @@ a {
 #wrapper {
   display: table-cell;
   vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .myRow {
   margin-top: 0.65em;
