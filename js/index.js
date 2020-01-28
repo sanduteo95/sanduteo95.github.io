@@ -28,7 +28,6 @@ $(function() {
     $('#img-github').removeClass('blur-in')
     $('#img-cv').removeClass('blur-in')
     $('#img-email').removeClass('blur-in')
-
   } else {
     $('#header').hide()
     $('#info').hide()

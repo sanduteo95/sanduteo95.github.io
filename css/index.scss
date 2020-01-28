@@ -184,9 +184,9 @@ a {
 	display: block;
 	position: absolute;
 	left: 50%;
-	bottom: -1em;
-	width: $date_size/2;
-	height: $date_size/2;
+	bottom: -.5em;
+	width: $date_size/4;
+	height: $date_size/4;
 	margin-left: -$date_size/4;
 	margin-right: $date_size/4;
 	cursor: pointer;
@@ -240,6 +240,10 @@ a {
 	#info, 
 	#more-info {
 		font-size: $big_font;
+	}
+
+	.down-arrow {
+		bottom: 1em;
 	}
 }
 
