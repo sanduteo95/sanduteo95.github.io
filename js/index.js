@@ -22,7 +22,7 @@ $(function() {
     $('li').map(function() {
         $(this).removeClass('blur-in')
     })
-    $('#down-arrow').removeClass('img-pop-up')
+    $('#down-arrow').removeClass('blur-in')
 
     $('#img-linkedin').removeClass('blur-in')
     $('#img-github').removeClass('blur-in')
@@ -32,13 +32,14 @@ $(function() {
     $('#header').hide()
     $('#info').hide()
     $('#more-info').hide()
+    $('#down-arrow').hide()
 
     setTimeout(function() {
       $('#header').show()
       $('#img-middle').removeClass('img-pop-up')
       $('#info').show()
       $('#more-info').show()
-      $('#down-arrow').removeClass('img-pop-up')
+      $('#down-arrow').show()
     }, 1500)
   }
 

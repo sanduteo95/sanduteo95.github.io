@@ -187,8 +187,8 @@ a {
 	bottom: -.5em;
 	width: $date_size/4;
 	height: $date_size/4;
-	margin-left: -$date_size/4;
-	margin-right: $date_size/4;
+	margin-left: -$date_size/8;
+	margin-right: $date_size/8;
 	cursor: pointer;
 }
 
@@ -250,6 +250,13 @@ a {
 @media screen and (max-device-width: 480px) {
 	body {
 		-webkit-text-size-adjust: none;
+	}
+
+	.down-arrow {
+		width: $date_size/2;
+		height: $date_size/2;
+		margin-left: -$date_size/4;
+		margin-right: $date_size/4;	
 	}
 }
 

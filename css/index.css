@@ -180,8 +180,8 @@ a {
   bottom: -.5em;
   width: 1.5em;
   height: 1.5em;
-  margin-left: -1.5em;
-  margin-right: 1.5em;
+  margin-left: -0.75em;
+  margin-right: 0.75em;
   cursor: pointer; }
 
 #down-arrow:hover {
@@ -217,7 +217,13 @@ a {
     bottom: 1em; } }
 @media screen and (max-device-width: 480px) {
   body {
-    -webkit-text-size-adjust: none; } }
+    -webkit-text-size-adjust: none; }
+
+  .down-arrow {
+    width: 3em;
+    height: 3em;
+    margin-left: -1.5em;
+    margin-right: 1.5em; } }
 @media screen and (max-width: 475px) {
   body {
     font-size: 10px; }
