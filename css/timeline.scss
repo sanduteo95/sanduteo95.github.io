@@ -185,10 +185,8 @@
 
 @media screen and (max-width: 768px) {
     #timeline {
-        padding: 0;
-
         &::before {
-            left: 17.4%;
+            left: 17.5%;
         }
     }
 
@@ -230,11 +228,11 @@
 }
 
 @media screen and (max-width: 475px) {
-    #timeline {
-        &::before {
-            left: 21.5%;
-        }
-    }
+    // #timeline {
+    //     &::before {
+    //         left: 21.5%;
+    //     }
+    // }
 
     #section-timeline {
         font-size: $big_font;
@@ -256,7 +254,7 @@
 @media screen and (max-width: 425px) {
     #timeline {
         &::before {
-            left: 17%;
+            left: 17.5%;
             width: 0.25em;
         }
     }
@@ -282,7 +280,7 @@
 
     #timeline {
         &::before {
-            left: 17%;
+            left: 17.5%;
         }
     }
 }

@@ -138,10 +138,8 @@
   line-height: 1.6; }
 
 @media screen and (max-width: 768px) {
-  #timeline {
-    padding: 0; }
-    #timeline::before {
-      left: 17.4%; }
+  #timeline::before {
+    left: 17.5%; }
 
   .content-timeline {
     width: 65%;
@@ -169,9 +167,6 @@
     left: 17.5%;
     color: #424242; } }
 @media screen and (max-width: 475px) {
-  #timeline::before {
-    left: 21.5%; }
-
   #section-timeline {
     font-size: 1.75em; }
 
@@ -185,7 +180,7 @@
     font-size: 1.35em; } }
 @media screen and (max-width: 425px) {
   #timeline::before {
-    left: 17%;
+    left: 17.5%;
     width: 0.25em; }
 
   #section-timeline span {
@@ -198,7 +193,7 @@
     display: inline-block; }
 
   #timeline::before {
-    left: 17%; } }
+    left: 17.5%; } }
 @media screen and (max-width: 360px) {
   #timeline::before {
     left: 17.5%; } }
