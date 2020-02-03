@@ -63,8 +63,6 @@ $time: 0.5s;
                 height: 170px;
 
                 .skill-card__knowledge li {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
                     transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
                     transition-duration: $time;
 
@@ -102,7 +100,6 @@ $time: 0.5s;
             padding-bottom: 10px;
             transition: height $time;
             overflow: hidden;
-
             .skill-card__title {
                 margin: 0;
                 text-transform: uppercase;
@@ -125,8 +122,6 @@ $time: 0.5s;
 
             .skill-card__knowledge li {
                 margin-top: 0;
-                -webkit-transform: translateX(-100%);
-                transform: translateX(-100%);
             }
         }
     }
@@ -204,8 +199,6 @@ $time: 0.5s;
 
                     li {
                         margin: 2px;
-                        transform: none;
-                        -webkit-transform: none;
                         transition: none;
                         position: relative;
 

@@ -56,7 +56,7 @@ function loadNavigation() {
     },
     {
       title: 'cv',
-      icon: 'fas fa-portrait',
+      icon: 'fas fa-file-download',
       link: './CV.pdf'
     }
   ];
@@ -69,7 +69,7 @@ function loadNavigation() {
     if ($(window).width() > 768) {
       li.addClass('blur-in')
     }
-    if (links[j].title !== 'email' && links[j].title !== 'cv') {
+    if (links[j].title !== 'email') {
       li
         .attr('id', 'img-' + links[j].title)
         .html(i)

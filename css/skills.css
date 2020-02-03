@@ -50,8 +50,6 @@
       #skills .skill-card:hover .skill-card__body {
         height: 170px; }
         #skills .skill-card:hover .skill-card__body .skill-card__knowledge li {
-          -webkit-transform: translateX(0);
-          transform: translateX(0);
           transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
           transition-duration: 0.5s; }
           #skills .skill-card:hover .skill-card__body .skill-card__knowledge li .skill-card__knowledge-list {
@@ -93,9 +91,7 @@
         color: #424242;
         list-style: none; }
       #skills .skill-card .skill-card__body .skill-card__knowledge li {
-        margin-top: 0;
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%); }
+        margin-top: 0; }
 
 @media screen and (max-width: 1200px) {
   #skills .skill-card {
@@ -148,8 +144,6 @@
         padding: 5px; }
         #skills .skill-card .skill-card__body .skill-card__knowledge li {
           margin: 2px;
-          transform: none;
-          -webkit-transform: none;
           transition: none;
           position: relative; }
           #skills .skill-card .skill-card__body .skill-card__knowledge li .skill-card__knowledge-list {
