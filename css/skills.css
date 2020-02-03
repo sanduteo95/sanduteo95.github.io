@@ -101,13 +101,13 @@
     -webkit-text-size-adjust: none; }
 
   #skills .pill {
-    font-size: 1.75em; }
+    font-size: 1.5em; }
   #skills .skill-card {
     display: inline-flex;
     margin: .5rem;
     margin-bottom: 1rem;
     width: 41vw;
-    height: 180px; }
+    height: 270px; }
     #skills .skill-card .skill-card__header {
       left: 5px;
       transition: none;
@@ -129,7 +129,7 @@
         box-shadow: none;
         text-align: left;
         padding-left: 1em;
-        font-size: 2em; }
+        font-size: 1.75em; }
       #skills .skill-card .skill-card__body .skill-card__duration {
         color: #a8a8a8;
         padding-left: 1.5em;
@@ -155,6 +155,14 @@
       transition: none;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); } }
+@media screen and (max-width: 625px), (max-device-width: 625px) {
+  #skills .pill {
+    font-size: 1.25em; }
+  #skills .skill-card {
+    width: 70vw;
+    height: fit-content; }
+    #skills .skill-card .skill-card__title {
+      font-size: 1.25em; } }
 @media screen and (max-width: 475px), (max-device-width: 475px) {
   #skills .skill-card {
     width: 70vw;

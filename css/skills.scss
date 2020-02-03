@@ -143,7 +143,7 @@ $time: 0.5s;
 
     #skills {
         .pill {
-            font-size: $big_font;
+            font-size: $medium_font;
         }
 
         .skill-card {
@@ -151,7 +151,7 @@ $time: 0.5s;
             margin: .5rem;
             margin-bottom: 1rem;
             width: 41vw;
-            height: 180px;
+            height: 270px;
 
             .skill-card__header {
                 left: 5px;
@@ -179,7 +179,7 @@ $time: 0.5s;
                     box-shadow: none;
                     text-align: left;
                     padding-left: 1em;
-                    font-size: $huge_font;
+                    font-size: $big_font;
                 }
 
                 .skill-card__duration {
@@ -218,6 +218,23 @@ $time: 0.5s;
                     -webkit-transform: translateX(-50%) translateY(-50%);
                     transform: translateX(-50%) translateY(-50%);
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 625px), (max-device-width: 625px) {
+    #skills {
+        .pill {
+            font-size: $small_font;
+        }
+
+        .skill-card {
+            width: 70vw;
+            height: fit-content;
+
+            .skill-card__title {
+                font-size: $small_font;
             }
         }
     }
