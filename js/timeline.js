@@ -54,7 +54,7 @@ function loadTimeline() {
       title: 'IBM SOFTWARE ENGINEER',
       date: 'Sep \'19',
       icon: 'briefcase',
-      description: 'Subsequently to finishing my placement year at IBM in 2018, I was offered the chance to return to my team as a graduate.'
+      description: 'Subsequently to finishing my placement year at IBM in 2018, I was offered the chance to return to my team as a graduate. During this time, I have been working closely with a client as a Customer Advocate, ensuring a good user experience with our product and driving change by taking customer feedback to the development teams. I have also used my quick learning skills and vast experience with programming languages and related tools to encourage incorporating new technologies into our pipeline and day-to-day work. I focused on automating processes and reducing the need for manual intervention and testing, thus increasing the time spent on delivering new features instead. Additionally, due to my involvement with our Kubernetes Operator delivery, I have been trusted to help clients debug their offerrings and used my knowledge to create new tasks and improvements for our operator.'
     },
     {
       title: 'UNIVERSITY OF BIRMINGHAM',
@@ -72,7 +72,7 @@ function loadTimeline() {
       title: 'IBM SOFTWARE ENGINEER',
       date: 'Jul \'17 - \'18',
       icon: 'briefcase',
-      description: 'Part of the Hybrid Integration department, I worked as a full-stack developer on a cloud product built on top of a micro-service architecture.  Collaborating with a variety of developers, architects, and designers, I contributed to implementing numerous aspects of the user-interface using AngularJS, React, HTML and Sass, and got involved in developing the persistence and API layers of various micro-services in Node.js. Being part of a department that practiced agile and DevOps, I was required to use a variety of tools to benefit our continuous delivery strategies, such as Jenkins, Travis, Artifactory and GitHub.  As a result of my skills I took on the role as the squad\'s leading front-end developer and was part of a group who started a side-project focused on improving the front-end.'
+      description: 'Part of the Hybrid Integration department, I worked as a full-stack developer on a cloud product built on top of a micro-service architecture.  Collaborating with a variety of developers, architects, and designers, I contributed to implementing numerous aspects of the user-interface using AngularJS, React, HTML and Sass, and got involved in developing the persistence and API layers of various micro-services in Node.js. Being part of a department that practiced agile and DevOps, I was required to use a variety of tools to benefit our continuous delivery strategies, such as Jenkins, Travis, Artifactory and GitHub.  As a result of my skills I took on the role as the squad\'s leading front-end developer and was part of a group who started a side-project focused on enhancing the front-end.'
     }, {
       title: 'SOFTWARE DESGIN STUDY',
       date: 'Jan - Apr \'17',
