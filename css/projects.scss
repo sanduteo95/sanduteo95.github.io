@@ -1,0 +1,21 @@
+@import 'variables';
+
+#projects {
+    width: 90%;
+    display: inline-block;
+    padding-left: 2em;
+    font-size: $medium_font;
+      
+    .project {
+        h3 {
+            padding-bottom: 0;
+            font-weight: normal;
+        }
+
+        font-size: $small_font/1.75;
+
+        .fab {
+            color: $dark !important;
+        }
+    }
+}
